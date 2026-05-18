@@ -19,7 +19,8 @@ print("Real part:", z.real)
 print("Imaginary part:", z.imag) """
 
 
-num00=int(input()) #input without messagenum2=input("no. please: ")
+num00=int(input()) #input without message
+num2=input("no. please: ")
 num3=input("no. please: ")
 x=int(num2)
 y=int(num3)
