@@ -8,7 +8,7 @@ print("My name is ",name, "and I am", age, "yrs old.")
 print("Hello \n world")
 print("hello \tworld")
 print("hello \\ world")
-print("\'hello world\'")"""
+print("\'hello world\'")
 
 
 num01=int(input("enter a number: "))
@@ -19,3 +19,15 @@ div= num01/num02
 mod=num01%num02
 expo=num01**num02
 print("sum: {}\ndiff: {}\nquotient: {}\nremainder: {} \nexponential: {}".format(add, sub, div, mod, expo))
+"""
+
+
+x=10
+y=20
+print("x==y ", x==y)
+print("x!=y", x!=y)
+print()
+print("x<y", x<y)
+print("x>y", x>y)
+print("x<=y", x<=y)
+print("x>=y", x>=y)
