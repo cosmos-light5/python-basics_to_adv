@@ -1,7 +1,7 @@
 #conditional statements (if, elif, else):
 
 #to check of the no. is positive or negeative or zero
-x=int(input("please enter a number: "))
+""" x=int(input("please enter a number: "))
 
 if x==0:
   print("The given number is zero.")
@@ -10,9 +10,33 @@ elif x<=0:
 elif x>=0:
   print("The given number is Positive number.")
 else:
-  print("The given input is not a number.")
+  print("The given input is not a number.") """
   
-""" oneline if else:
+  # simple calclulator:
+p=int(input("enter a number: "))
+r=input("enter operator: ")
+q=int(input("enter a number: "))
+
+if r=="*":
+  print("Product: ", p*q)
+elif r=="-":
+  print("Difference: ", p-q)
+elif r=="/":
+  print("Quotient: ", p/q)
+elif r=="+":
+  print("Sum: ", p+q)
+else:
+  print("invalid input..")
+
+""" output:
+enter a number: 4
+enter operator: -
+enter a number: 2
+Difference:  2"""
+
+
+
+  """ oneline if else:
 syntax: value_if_true if condition else value_if_false
 """
 """ while False:
