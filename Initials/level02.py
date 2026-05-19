@@ -2,7 +2,7 @@
 name= "Ram"
 age=5
 print("My name is {} and I am {} yrs old.".format(name , age))
-print(f"My name is {name} and I am {age} yrs old.") #syntax: f"{var}...{var}" , f-string is a string literal that is prefixed with 'f' or 'F', allows to embed expressions inside string literals, using curly braces {}. The expressions inside the curly braces are evaluated at runtime and then formatted using the __formatt__ing__protocol. 
+print(f"My name is {name} and I am {age} yrs old.") #syntax: f"..{var}...{var}..." , f-string is a string literal that is prefixed with 'f' or 'F', allows to embed expressions inside string literals, using curly braces {}. The expressions inside the curly braces are evaluated at runtime and then formatted using the __formatt__ing__protocol. 
 print("My name is ",name, "and I am", age, "yrs old.") 
 """ output:
 My name is Ram and I am 5 yrs old.
@@ -77,6 +77,14 @@ print(a)
 
 b%=a
 print(b)
+
+x=10
+y=20
+x-=y
+y+=x
+print("x-=y:", x)
+print("x+=y:", y)
+
 
 """ *PEMDAS follow garxa --> yesma multiply first priority
     *BODMAS ma division first priority hunxa, then multiplication"""
