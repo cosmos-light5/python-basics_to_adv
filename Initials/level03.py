@@ -12,7 +12,7 @@ elif x>=0:
 else:
   print("The given input is not a number.") """
   
-  # simple calclulator:
+"""   # simple calclulator:
 p=int(input("enter a number: "))
 r=input("enter operator: ")
 q=int(input("enter a number: "))
@@ -26,14 +26,22 @@ elif r=="/":
 elif r=="+":
   print("Sum: ", p+q)
 else:
-  print("invalid input..")
+  print("invalid input..") """
 
-""" output:
-enter a number: 4
-enter operator: -
-enter a number: 2
-Difference:  2"""
 
+
+
+#grade calculation:
+x=int(input("Enter your total marks: "))
+
+if x>90:
+  print("Grade A")
+elif x>=80:
+  print("Grade B")
+elif x>=70:
+  print("Grade C")
+else:
+  print("Grade D")
 
 
   """ oneline if else:
