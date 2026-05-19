@@ -26,7 +26,7 @@ elif r=="/":
 elif r=="+":
   print("Sum: ", p+q)
 else:
-  print("invalid input..") """
+  print("invalid input..") 
 
 
 
@@ -42,10 +42,15 @@ elif x>=70:
   print("Grade C")
 else:
   print("Grade D")
+"""
 
-
-  """ oneline if else:
+""" oneline if else:
 syntax: value_if_true if condition else value_if_false
 """
+temp=20
+weather="hot" if temp>=20 else "cold"
+print("weather==>", weather)
+
+
 """ while False:
     condition """
