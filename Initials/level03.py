@@ -47,9 +47,28 @@ else:
 """ oneline if else:
 syntax: value_if_true if condition else value_if_false
 """
-temp=20
+""" temp=20
 weather="hot" if temp>=20 else "cold"
-print("weather==>", weather)
+print("weather==>", weather) """
+
+#falsy values: 0, 0.0, 0j, None, False, [], (), {}, set() i.e empty collections, range(0)
+#truthy values: all values except falsy values are truthy values
+
+
+#example of falsy values:
+if 0:
+  print("This is falsy value.")
+if None:
+  print("This is falsy value.")
+if []:
+  print("This is falsy value.")
+
+if 42:
+  print("This is truthy value.")
+if "Hello":
+  print("This is truthy value.")
+if [1, 2, 3]:
+  print("This is truthy value.")
 
 
 """ while False:
