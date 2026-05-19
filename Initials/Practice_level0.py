@@ -30,7 +30,8 @@ number = int(number_str)
 print(number)
 print(type(number))
 
-
+#(1,2,3,4)  tuple
+#[1,2,3,4,5]  list
 
 a,b,c,d,e,f = 1,2,3,"yellow",5.5, "potter"
 is_student=True

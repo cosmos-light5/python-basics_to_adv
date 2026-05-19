@@ -1,5 +1,5 @@
 #--> for single line comment
-"""... """ -->for multi line comment
+#  """... """ --> for multi line comment
 """when semantics is displayed:
     accept --> tab, 
     accept word -->ctrl + right_arrow"""
