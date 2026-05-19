@@ -49,7 +49,7 @@ syntax: value_if_true if condition else value_if_false
 """
 """ temp=20
 weather="hot" if temp>=20 else "cold"
-print("weather==>", weather) """
+print("weather==>", weather) 
 
 #falsy values: 0, 0.0, 0j, None, False, [], (), {}, set() i.e empty collections, range(0)
 #truthy values: all values except falsy values are truthy values
@@ -68,7 +68,15 @@ if 42:
 if "Hello":
   print("This is truthy value.")
 if [1, 2, 3]:
-  print("This is truthy value.")
+  print("This is truthy value.")"""
+
+#rounding off a number:
+x=3.14159
+print(round(x, 2)) #rounds off x to 2 decimal places
+
+my_float= 3.14159
+y=f"{my_float:.3f}" #formats my_float to 2 decimal places
+print(y)
 
 
 """ while False:
