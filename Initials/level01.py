@@ -5,7 +5,7 @@
     accept word -->ctrl + right_arrow"""
 
 s="ram"
-f=None #f is a special constant in Python that represents the absence of a value or a null value. It is often used to indicate that a variable has no value assigned to it or that a function does not return anything.
+f=None #Here f with value None is a special constant in Python that represents the absence of a value or a null value. It is often used to indicate that a variable has no value assigned to it or that a function does not return anything.
 p=True
 q=5j
 
