@@ -7,6 +7,7 @@ print("My name is ",name, "and I am", age, "yrs old.")
 """ output:
 My name is Ram and I am 5 yrs old.
 My name is  Ram and I am 5 yrs old. """
+#y=f"{my_float:.3f}"
 
 #escape sequence
 print("Hello \n world")

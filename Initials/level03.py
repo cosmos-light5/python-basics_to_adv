@@ -68,7 +68,7 @@ if 42:
 if "Hello":
   print("This is truthy value.")
 if [1, 2, 3]:
-  print("This is truthy value.")"""
+  print("This is truthy value.")
 
 #rounding off a number:
 x=3.14159
@@ -77,6 +77,7 @@ print(round(x, 2)) #rounds off x to 2 decimal places
 my_float= 3.14159
 y=f"{my_float:.3f}" #formats my_float to 2 decimal places
 print(y)
+"""
 
 
 """ while False:
