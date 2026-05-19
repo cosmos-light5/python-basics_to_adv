@@ -1,7 +1,7 @@
 #conditional statements (if, elif, else):
 
 #to check of the no. is positive or negeative or zero
-""" x=int(input("please enter a number: "))
+x=int(input("please enter a number: "))
 
 if x==0:
   print("The given number is zero.")
@@ -10,9 +10,9 @@ elif x<=0:
 elif x>=0:
   print("The given number is Positive number.")
 else:
-  print("The given input is not a number.") """
-  
-"""   # simple calclulator:
+  print("The given input is not a number.")
+
+# simple calclulator:
 p=int(input("enter a number: "))
 r=input("enter operator: ")
 q=int(input("enter a number: "))
@@ -42,12 +42,12 @@ elif x>=70:
   print("Grade C")
 else:
   print("Grade D")
-"""
+
 
 """ oneline if else:
 syntax: value_if_true if condition else value_if_false
 """
-""" temp=20
+temp=20
 weather="hot" if temp>=20 else "cold"
 print("weather==>", weather) 
 
@@ -77,8 +77,3 @@ print(round(x, 2)) #rounds off x to 2 decimal places
 my_float= 3.14159
 y=f"{my_float:.3f}" #formats my_float to 2 decimal places
 print(y)
-"""
-
-
-""" while False:
-    condition """
