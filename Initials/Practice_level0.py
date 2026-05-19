@@ -44,7 +44,7 @@ print(c)
 print(d)
 print(e)
 print(f)
-print()
+
 print()
 
 print(is_student)
