@@ -75,7 +75,7 @@ for char in msg:
     print("NOT a character..")
   count+=1
 print("total characters: ", count-1) #count lai 1 bata initialize gareko le last ma count-1 gareko kina bhane loop ko last ma count 1 increment hunxa, so total characters print garna count-1 gareko.
-"""
+
 
 #upper and lower case conversion
 char="X-Man and GODzilla"
@@ -92,9 +92,28 @@ for char in x:
   else:
     print(" consonant")
 print("total no. of vowels: ", count)
+"""
 
-  #while loops
-#   while condition:
-#   code to execute while condition is true
+#proper done
+count=0
+ccount=0
+vcount=0
+x=input("enter any word: ")
+for char in x:
+  if char.lower() in "aeiou":
+    vcount+=1
+    print(vcount, end=" ")
+    print(char, ":", end="")        
+    print(" vowel")
+  else:
+    ccount+=1
+    print(count, end=" ")
+    print(char, ":", end="")      
+    print(" consonant")
+  count+=1
+print("total no. of vowels: ", vcount)
+print("total no. of consonants: ", ccount)
+print(f"total no. of characters: {count}")
+
 
   
