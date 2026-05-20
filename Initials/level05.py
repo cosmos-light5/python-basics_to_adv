@@ -8,7 +8,14 @@ while True:
     count += 1
     if count >= 5:
         break
-    
+""" output:
+        0
+        1
+        2
+        3
+        4 """
+
+
 #   break - exits the loop immediately
 #   useful for search operations or when the condition is met
 #   common in infinite loops i.e. when the number of iterations is not known beforehand
@@ -21,7 +28,12 @@ for i in range(1,10):
     if i % 2 == 0:
         continue
     print(i)
-
+""" output:
+        1
+        3
+        5
+        7
+        9 """
 
 #   pass statement
 #   used when a statement is required syntactically but you do not want any code to be executed  
@@ -34,25 +46,53 @@ for i in range(5):
       pass    
     print(i)
 
+""" output:
+        0
+        1
+        2
+        3
+        4 """
+
 # looping over a list
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(f"I like {fruit}s.")
+""" output:
+I like apples.
+I like bananas.
+I like cherrys. """
+
 
 #looping over a tuple
 colors = ("red", "green", "blue")
 for color in colors:
     print(f"The color is {color}.")
+""" output:
+The color is red.
+The color is green.
+The color is blue. """
+
 
 #getting the index and value using enumerate
 animals = ["cat", "dog", "rabbit"]
 for index, animal in enumerate(animals):
     print(f"Index: {index}, Animal: {animal}")
+""" output:
+Index: 0, Animal: cat
+Index: 1, Animal: dog
+Index: 2, Animal: rabbit """
+
 
 #looping over a dictionary
 person = {"name": "Alice", "age": 30, "city": "New York"}
 for key, value in person.items():
     print(f"{key}: {value}")
+""" output:
+    name: Alice
+    age: 30
+    city: New York
+"""
+
 
 #looping over a string  [strings are sequences of characters, so we can iterate over them character by character]
 #useful for counting, validating or transforming
@@ -60,3 +100,18 @@ for key, value in person.items():
 message = "Hello, World!"
 for char in message:
     print(char)
+""" output:
+    H
+    e
+    l
+    l
+    o
+    ,
+    
+    W
+    o
+    r
+    l
+    d
+    !
+"""
