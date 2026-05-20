@@ -37,12 +37,24 @@ for i in range(1,11):
 for i in range(3,31,3):   #3-3 increment gareko xa i.e. multiple of 3
   if i!=12:
     print(i,end ="")
-"""
+
     
 for i in range(3,31,3): #3-3 increment gareko xa i.e. multiple of 3
   if i!=12:
     print(i,end="a ")
+"""
 
+for i in range(3,31,3): #3-3 increment gareko xa i.e. multiple of 3
+  if i!=12:
+    print(i,end="a ")
+    print()
+    print()
+    print(i,end =" ")
+
+#long logical conditions
+for i in range(3,31,3):
+  if i!=12 and i%5 != 0:
+    print(i)
 #   while condition:
 #   code to execute while condition is true
 
