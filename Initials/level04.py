@@ -24,7 +24,7 @@ for i in range(3,31,3):
 
 for i in range(1,31,3):
     print(i)
-"""
+
 #remove no. 12
 for i in range(1,11):
   i*=3
@@ -37,7 +37,11 @@ for i in range(1,11):
 for i in range(3,31,3):   #3-3 increment gareko xa i.e. multiple of 3
   if i!=12:
     print(i,end ="")
-
+"""
+    
+for i in range(3,31,3): #3-3 increment gareko xa i.e. multiple of 3
+  if i!=12:
+    print(i,end="a ")
 
 #   while condition:
 #   code to execute while condition is true
