@@ -215,7 +215,7 @@ x=input("enter any word: ")
 for char in x:
   if char.lower() in "aeiou":
     vcount+=1
-    print(vcount, end=" ")
+    print(count, end=" ")
     print(char, ":", end="")        
     print(" vowel")
   else:
