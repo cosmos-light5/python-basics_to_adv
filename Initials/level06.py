@@ -34,7 +34,7 @@ for count in range(0,7):
     print(f"Day {count}: Weekend! Rest Day")
   else:
     print(f"Day {count}: Work Day")
- """
+ 
 """ output:
         Day 1: Gym Day
         Day 2: Work Day
@@ -43,6 +43,8 @@ for count in range(0,7):
         Day 5: Study Day
         Day 6: Weekend! Rest Day
         Day 7: Weekend! Rest Day
+"""
+
 
 #to print in descending order
 num=int(input("Enter a number: "))
@@ -92,7 +94,7 @@ else:
 def check_and_reverse_palindrome(n):    
     str_num = str(n)
 
-      reversed_str = str_num[::-1]        # Reverse the string using slicing
+    reversed_str = str_num[::-1]        # Reverse the string using slicing
 
     if str_num == reversed_str:
         print(f"{n} is a palindrome!")
