@@ -90,11 +90,11 @@ for i in range(0,num):
   for j in range(0,i+1):                #* ko lagi
     print("*",end="")                   #same mathi ko code ma * ko lagi print garda end ma space nadiye righi sided right angled triangle dinxa...
   print()
-"""
 
 
 
-#piramid with no space inbetween i.e. odd no. of * in every row
+
+#piramid with no space inbetween i.e. increasing odd no. of * in every row
 for i in range(1,6):                #1 to (6-1) wata rows ma print garne vaneko xa
   for j in range(i,6):              #i le rows indicate gareko ra rows ma space ko no. diyeko
     print(" ",end=" ")
@@ -103,3 +103,28 @@ for i in range(1,6):                #1 to (6-1) wata rows ma print garne vaneko 
   for m in range(i,1,-1):
     print("*",end=" ")
   print(" ")
+
+
+
+#differert way to print the above piramid pattern
+x=5
+for i in range(1,6):
+  for k in range(1,x+1):
+    print(end="  ")
+  for j in range(1,i+1):
+    print("*",end=" ")
+  for m in range(i,1,-1):
+    print("*",end=" ")
+  print(" ")
+  x-=1
+
+"""
+
+num=int(input("Enter number of rows: "))
+
+for i in range(0,num):
+  for j in range(0,num-i-1):            #space ko lagi
+    print("",end=" ")
+  for j in range(0,2*i+1):                #* ko lagi
+    print("*",end="")                   #same mathi ko code ma * ko lagi print garda step ma twice igarne ra end ma space nadiye odd no. of * ko pyramid dinxa...
+  print()
