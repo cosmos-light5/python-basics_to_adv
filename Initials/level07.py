@@ -65,12 +65,12 @@ for i in range(num,0,-1):
   for j in range(0,i):
     print("*",end=" ")
   print()
-"""
 
 
 
 
-#piramid with space in between and sequence of numbers
+
+#piramid with space in between and sequence of consecutive increasing numbers
 num=int(input("Enter number of rows: "))
 
 for i in range(0,num):
@@ -79,3 +79,27 @@ for i in range(0,num):
   for j in range(0,i+1):                #* ko lagi
     print("*",end=" ")
   print()
+
+
+#right handed right angled triangle
+num=int(input("Enter number of rows: "))
+
+for i in range(0,num):
+  for j in range(0,num-i-1):            #space ko lagi
+    print("",end=" ")
+  for j in range(0,i+1):                #* ko lagi
+    print("*",end="")                   #same mathi ko code ma * ko lagi print garda end ma space nadiye righi sided right angled triangle dinxa...
+  print()
+"""
+
+
+
+#piramid with no space inbetween i.e. odd no. of * in every row
+for i in range(1,6):                #1 to (6-1) wata rows ma print garne vaneko xa
+  for j in range(i,6):              #i le rows indicate gareko ra rows ma space ko no. diyeko
+    print(" ",end=" ")
+  for k in range(0,i):              #
+    print("*",end=" ")
+  for m in range(i,1,-1):
+    print("*",end=" ")
+  print(" ")
