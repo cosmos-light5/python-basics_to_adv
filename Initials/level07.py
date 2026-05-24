@@ -14,3 +14,9 @@ i= 2 j= 4
 i= 3 j= 3
 i= 3 j= 4
 i= 4 j= 4"""
+
+
+for i in range(1,6):
+  for j in range(1,5):
+    print("*",end="")
+  print()               #innerloop 4 times complete vayesi 1st outer loop complete hunxa next outer loop initiate garnu aaghi gap wa newline feed diyeko
