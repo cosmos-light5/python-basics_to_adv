@@ -7,7 +7,7 @@
     -may contain repeated elements
     -list items may be of different data types"""
 #creating a list
-empty_list = []
+""" empty_list = []
 print(empty_list)
 
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -20,4 +20,26 @@ mixed_data_types = ['Asabeneh', 250, True, {'country': 'Finland', 'city': 'Helsi
 print(mixed_data_types)
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
-print(len(cars[3]))
+print(len(cars[3]))     #given index ko element ko length dinxa
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
+print(cars[3])            #index ko element dinxa
+ """
+
+#negative indexing
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
+print((cars[-1]))             #last element bata -1,-2,-3 count hudai first tira ko position ma aauxa
+
+#add garxa tara nested list banaudaina!!..
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
+more_cars= cars + ["Nissan","Toyota"]
+print(more_cars)
+
+#To repeat or copy same list multiple times and give a new list without nesting
+cars=["Mercedies Bentz"]
+print(cars*3)
+
+#in operator
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
+print("Mitsubisi" in cars)          #list ma xa ki xaina bhanera check garxa and return ma true or false lina
+
