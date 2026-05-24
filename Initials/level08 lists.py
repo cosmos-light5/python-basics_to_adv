@@ -116,9 +116,7 @@ print(new_cars)
     -extend(): adds all items of an iterable to the end of the list
 
 
-    -clear(): removes all items from the list
-    -pop(): removes and returns an item at the given index (default is the last item)
-    -remove(): removes the first item with the specified value
+    
     -index(): returns the index of the first item with the specified value
     -count(): returns the number of items with the specified value
     -sort(): sorts the items of the list in place
@@ -126,7 +124,7 @@ print(new_cars)
     -copy(): returns a shallow copy of the list  """
 
 
-cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+""" cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 cars.append("koneigeggs")          #list ko last ma element add garxa
 print(cars)
 
@@ -137,3 +135,43 @@ cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubis
 more_cars=["wrangler_Jeep","Bugatti"]
 cars.extend(more_cars)           #list ko last ma elements add garxa
 print(cars)
+ """
+#removing items from list
+""" -remove(): removes the first item with the specified value
+    -pop(): removes and returns an item at the given index (default is the last item)
+    -del(): removes an item at the specified index or deletes the entire list
+    -clear(): removes all items from the list  """
+
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+removed_cars = cars.pop()             #last element remove garxa
+print(removed_cars)                    #output: Toyota
+print(cars)                             #output: ['Roles Royace', 'Mercedies Bentz', 'Farari', 'Porche', 'Volkeswagen', 'Mitsubisi', 'Nissan']
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+removed_cars = cars.pop(2)           #given index ko element remove garxa
+print(removed_cars)                    #output: Farari
+print(cars)     
+
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+cars.remove("Porche")         #given element remove garxa
+print(cars)
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+cars.remove("Porche")         #given element remove garxa
+print(cars[3])
+print(cars)
+
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+del cars[0]            #given index ko element remove garxa
+print(cars)
+
+del cars[3:5]           #given index ko range ma elements remove garxa ie. 3rd and 4th index ko elements remove garxa
+print(cars)  
+
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+cars.clear()           #list ko sabai elements remove garxa
+print(cars)             #output: []
