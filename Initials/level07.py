@@ -118,7 +118,7 @@ for i in range(1,6):
   print(" ")
   x-=1
 
-"""
+
 
 num=int(input("Enter number of rows: "))
 
@@ -127,4 +127,30 @@ for i in range(0,num):
     print("",end=" ")
   for j in range(0,2*i+1):                #* ko lagi
     print("*",end="")                   #same mathi ko code ma * ko lagi print garda step ma twice igarne ra end ma space nadiye odd no. of * ko pyramid dinxa...
+  print()
+"""
+
+
+
+#to print butterfly pattern
+a=1
+b=7
+for i in range(1,6):
+  for j in range(0,i):
+    print("*", end="")
+  for k in range(a,9):
+    print(" ", end="")
+  for l in range(0,i):
+    print("*", end="")
+  a+=2
+  print()                # yaha samma 1st half of butterfly pattern print hunxa (1,6) i.e. 1 to 5 samma print garxa
+
+for m in range(1,5):
+  for n in range(m,5):
+    print("*", end="")
+  for o in range(b,9):
+    print(" ", end="")
+  for p in range(m,5):
+    print("*", end="")
+  b-=2
   print()
