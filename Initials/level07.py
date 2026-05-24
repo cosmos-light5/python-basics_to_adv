@@ -1,9 +1,9 @@
 #display patterns
-""" for i in range(1,6):          #1 to 5 samma print garxa
+for i in range(1,6):          #1 to 5 samma print garxa
   for j in range(i,5):        #1 to 4 samma print garxa i.e. inner loop 4 times chale paxi matra outer loop ko 1 loop complete hunxa ra 2nd loop suru hunxa total 5x4=20 times chalxa
     print("i=",i,"j=",j)
 
-output:
+""" output:
 i= 1 j= 1
 i= 1 j= 2
 i= 1 j= 3
@@ -13,7 +13,7 @@ i= 2 j= 3
 i= 2 j= 4
 i= 3 j= 3
 i= 3 j= 4
-i= 4 j= 4
+i= 4 j= 4 """
 
 
 for i in range(1,6):
@@ -21,12 +21,25 @@ for i in range(1,6):
     print("*",end="")
   print()               #innerloop 4 times complete vayesi 1st outer loop complete hunxa next outer loop initiate garnu aaghi gap wa newline feed diyeko
 
-
+""" output:
+****
+****
+****
+****
+**** """
 
 #Displaying patterns without using nested loops
 num=int(input("enter a number of rows: "))
 for i in range(1,num+1):                    
   print("*"*i) 
+
+""" output:
+enter a number of rows: 5
+*
+**
+***
+****
+***** """
 
 
 
@@ -37,7 +50,13 @@ for i in range(1,num+1):
     print("*", end="")              #eg. 0 to 5 range ma vaye 4 wata hunthyo here 0+1 to number+1 gare ko
   print()
 
-
+""" output:
+enter a number of rows: 5
+*
+**
+***
+****
+***** """
 
 
 #just seperated with space
@@ -48,6 +67,14 @@ for i in range(1,num+1):
   print()
 
 
+""" output:
+enter a number of rows: 5
+* 
+* * 
+* * * 
+* * * * 
+* * * * *  """
+
 
 
 #reversing the above pattern
@@ -57,7 +84,13 @@ for i in range(num,0,-1):
     print("*",end="")
   print()
 
-
+""" output:
+enter a number of rows: 5
+*****
+****
+***
+**
+*"""
 
 #reversing the above pattern with space
 num=int(input("enter a number of rows: "))
@@ -65,8 +98,12 @@ for i in range(num,0,-1):
   for j in range(0,i):
     print("*",end=" ")
   print()
-
-
+""" output:enter a number of rows: 5
+* * * * * 
+* * * * 
+* * * 
+* * 
+*  """
 
 
 
@@ -80,6 +117,15 @@ for i in range(0,num):
     print("*",end=" ")
   print()
 
+""" output:
+Enter number of rows: 5
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * *  """
+
+
 
 #right handed right angled triangle
 num=int(input("Enter number of rows: "))
@@ -91,6 +137,13 @@ for i in range(0,num):
     print("*",end="")                   #same mathi ko code ma * ko lagi print garda end ma space nadiye righi sided right angled triangle dinxa...
   print()
 
+""" output:
+Enter number of rows: 5
+    *
+   **
+  ***
+ ****
+***** """
 
 
 
@@ -103,7 +156,12 @@ for i in range(1,6):                #1 to (6-1) wata rows ma print garne vaneko 
   for m in range(i,1,-1):
     print("*",end=" ")
   print(" ")
-
+""" output:
+          *  
+        * * *  
+      * * * * *  
+    * * * * * * *  
+  * * * * * * * * *   """
 
 
 #differert way to print the above piramid pattern
@@ -117,7 +175,12 @@ for i in range(1,6):
     print("*",end=" ")
   print(" ")
   x-=1
-
+""" output:
+          *  
+        * * *  
+      * * * * *  
+    * * * * * * *  
+  * * * * * * * * *  """
 
 
 num=int(input("Enter number of rows: "))
@@ -128,8 +191,14 @@ for i in range(0,num):
   for j in range(0,2*i+1):                #* ko lagi
     print("*",end="")                   #same mathi ko code ma * ko lagi print garda step ma twice igarne ra end ma space nadiye odd no. of * ko pyramid dinxa...
   print()
-"""
 
+""" output:
+Enter number of rows: 5
+    *
+   ***
+  *****
+ *******
+********* """
 
 
 #to print butterfly pattern
@@ -154,3 +223,14 @@ for m in range(1,5):
     print("*", end="")
   b-=2
   print()
+
+  """ output:
+    *        *
+    **      **
+    ***    ***
+    ****  ****
+    **********
+    ****  ****
+    ***    ***
+    **      **
+    *        * """
