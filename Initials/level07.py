@@ -36,3 +36,32 @@ for i in range(1,num+1):
   for j in range(1,i+1):
     print("*", end="")              #eg. 0 to 5 range ma vaye 4 wata hunthyo here 0+1 to number+1 gare ko
   print()
+
+
+
+
+#just seperated with space
+num=int(input("enter a number of rows: "))
+for i in range(1,num+1):
+  for j in range(1,i+1):
+    print("*", end=" ")              #eg. 0 to 5 range ma vaye 4 wata hunthyo here 0+1 to number+1 gare ko
+  print()
+
+
+
+
+#reversing the above pattern
+num=int(input("enter a number of rows: "))
+for i in range(num,0,-1):
+  for j in range(0,i):
+    print("*",end="")
+  print()
+
+
+
+#reversing the above pattern with space
+num=int(input("enter a number of rows: "))
+for i in range(num,0,-1):
+  for j in range(0,i):
+    print("*",end=" ")
+  print()
