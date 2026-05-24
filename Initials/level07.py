@@ -26,7 +26,7 @@ for i in range(1,6):
 #Displaying patterns without using nested loops
 num=int(input("enter a number of rows: "))
 for i in range(1,num+1):                    
-  print("*"*i) """
+  print("*"*i) 
 
 
 
@@ -63,5 +63,19 @@ for i in range(num,0,-1):
 num=int(input("enter a number of rows: "))
 for i in range(num,0,-1):
   for j in range(0,i):
+    print("*",end=" ")
+  print()
+"""
+
+
+
+
+#piramid with space in between and sequence of numbers
+num=int(input("Enter number of rows: "))
+
+for i in range(0,num):
+  for j in range(0,num-i-1):            #space ko lagi
+    print("",end=" ")
+  for j in range(0,i+1):                #* ko lagi
     print("*",end=" ")
   print()
