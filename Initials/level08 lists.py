@@ -62,7 +62,7 @@ print(cars[2:4])            #0index bata 2nd index ko bata start till stop-1 sam
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[:])        #shallow copy garxa
 
-"""
+
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[::-1])           #reverse garxa
@@ -72,4 +72,13 @@ print(cars[3:])           #3rd index bata last samma print garxa
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[:4])           #0 index bata 4th index ko bata start till stop-1 samma print garxa
+
+"""
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[:-1])              #last ko nadekhako matra but not deleted..
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+cars[0] = "Hundai"        #index wise replace gareko
+print(cars)
 
