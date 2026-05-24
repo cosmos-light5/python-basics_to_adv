@@ -24,7 +24,7 @@ print(len(cars[3]))     #given index ko element ko length dinxa
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print(cars[3])            #index ko element dinxa
- """
+ 
 
 #negative indexing
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
@@ -43,3 +43,21 @@ print(cars*3)
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print("Mitsubisi" in cars)          #list ma xa ki xaina bhanera check garxa and return ma true or false lina
 
+"""
+
+#unavailable index ko notify garna ko lagi
+index=-1
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
+if 0 <= index or index < len(cars):
+  print(cars[index])
+else:
+  print("Index out of range")
+
+#Basic slicing
+''' syntax:
+        list[start:stop: step] '''
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[2:4])            #0index bata 2nd index ko bata start till stop-1 samma..
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[:])        #shallow copy garxa
