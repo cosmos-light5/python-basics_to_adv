@@ -114,14 +114,7 @@ print(new_cars)
 """ -append(): adds an item to the end of the list
     -insert(): adds an item at the specified position
     -extend(): adds all items of an iterable to the end of the list
-
-
-    
-    -index(): returns the index of the first item with the specified value
-    -count(): returns the number of items with the specified value
-    -sort(): sorts the items of the list in place
-    -reverse(): reverses the elements of the list in place
-    -copy(): returns a shallow copy of the list  """
+     """
 
 
 """ cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
@@ -142,7 +135,7 @@ print(cars)
     -del(): removes an item at the specified index or deletes the entire list
     -clear(): removes all items from the list  """
 
-
+""" 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 removed_cars = cars.pop()             #last element remove garxa
 print(removed_cars)                    #output: Toyota
@@ -174,4 +167,49 @@ print(cars)
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 cars.clear()           #list ko sabai elements remove garxa
-print(cars)             #output: []
+print(cars)             #output: [] """
+
+#searching and counting list items
+""" -index(): returns the index of the first item with the specified value
+    -count(): returns the number of items with the specified value  
+    -in operator: returns true if the item exists in the list and false if it does not exist in the list
+   """
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+position = cars.index("Porche")           #given element ko index return garxa
+print(position)                            #output: 3
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi","Porche", "Nissan","Toyota"]
+position = cars.index("Porche", 4)        #startsearching from 4th index but given element is not found in the list from 4th index so error dinxa
+print(position)
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+count = cars.count("Porche")              #given element ko count return garxa  
+print(count)                               #output: 1
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+if "buggy" in cars:             #startsearching from 3rd index   
+    print("buggy is in the list")
+else:                     
+    print("buggy is not in the list")
+
+#ordering list items
+""" -sort(): sorts the items of the list in place
+    -reverse(): reverses the elements of the list in place
+    -sorted(): returns a sorted list without modifying the original list
+    -reveresed(): returns an iterator that accesses the given sequence in the reverse order
+
+    -copy(): returns a shallow copy of the list  """
+
+num=[ 6, 5, 4,7, 3, 1, 0, 2]
+num.sort()          #list ko elements lai ascending order ma sort garxa
+print(num)          #output: [0, 1, 2, 3, 4, 5, 6, 7]
+
+num=[ 6, 5, 4,7, 3, 1, 0, 2]
+num.sort(reverse=True)          #list ko elements lai descending order ma sort garxa
+print(num)          #output: [7, 6, 5, 4, 3, 2, 1, 0]
+
+#sortwith key function
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+cars.sort(key=len)          #list ko elements lai length ko basis ma sort garxa
+print(cars)          #output: ['Farari', 'Porche', 'Nissan', 'Toyota', 'Roles Royace', 'Volkeswagen', 'Mitsubisi', 'Mercedies Bentz']   
