@@ -20,3 +20,10 @@ for i in range(1,6):
   for j in range(1,5):
     print("*",end="")
   print()               #innerloop 4 times complete vayesi 1st outer loop complete hunxa next outer loop initiate garnu aaghi gap wa newline feed diyeko
+
+
+
+#Displaying patterns without using nested loops
+num=int(input("enter a number of rows: "))
+for i in range(1,num+1):                    
+  print("*"*i)
