@@ -43,7 +43,7 @@ print(cars*3)
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print("Mitsubisi" in cars)          #list ma xa ki xaina bhanera check garxa and return ma true or false lina
 
-"""
+
 
 #unavailable index ko notify garna ko lagi
 index=-1
@@ -61,3 +61,15 @@ print(cars[2:4])            #0index bata 2nd index ko bata start till stop-1 sam
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[:])        #shallow copy garxa
+
+"""
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[::-1])           #reverse garxa
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[3:])           #3rd index bata last samma print garxa
+
+cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
+print(cars[:4])           #0 index bata 4th index ko bata start till stop-1 samma print garxa
+
