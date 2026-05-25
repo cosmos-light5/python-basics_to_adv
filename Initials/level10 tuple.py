@@ -21,7 +21,13 @@ print(empty_tuple)
 
 #single element tuple (note the comma)
 single_element_tuple = (42,)            #without the comma, it would be just an integer inside parentheses, not a tuple
-print(single_element_tuple)
+print(single_element_tuple)         # Output: (42,)
+
+tuple=(42)  #this is not a tuple, it's just an integer
+print(tuple)             # Output: 42
+
+num=(1, "hello", 3.14, True)
+print(num)              # Output: (1, "hello", 3.14, True)
 
 #multiple element tuple
 multiple_element_tuple = (1, "hello", 3.14)
@@ -29,4 +35,25 @@ print(multiple_element_tuple)
 
 #accessing elements
 print(multiple_element_tuple[1])  # Output: "hello"
+
+#tuple paking without parentheses
+packed_tuple = 1, "hello", 3.14
+print(packed_tuple)    # Output: (1, "hello", 3.14)
+
+#tuple unpacking
+a, b, c = packed_tuple
+print(a)  # Output: 1
+print(b)  # Output: "hello" 
+print(c)  # Output: 3.14
+
+
+x,y,z=(10,20,30)
+print(x)  # Output: 10
+print(y)  # Output: 20
+
+#indexing and slicing same as lists
+colors = ("red", "green", "blue", "yellow")
+print(colors[0])  # Output: "red"   => indexing
+print(colors[1:3])  # Output: ("green", "blue") => slicing
+
 
