@@ -63,9 +63,15 @@ print(cube)
 """ purpose: to create a new list based on an existing list applying operations no the elementsto modify or filter.
     syntax: new_list = [expression for item in iterable if condition]
     pros: more concise and often faster than traditional loops
-    can include conditions: filter items during creation"""
+    can include conditions: filter items during creation
+    
+    list comprehension with conditions
+    filtering:includes only items that meet a condition
+    transforming conditionally: applies various operation based on conditions
+    Multiple conditions: can include and or if else..
+    """
 
-even_num=[]
+""" even_num=[]
 even=[x for x in range(0,20,2)]
 print(even)
 
@@ -111,4 +117,17 @@ print(fahreinheit)
 #comphrension list ma gareko
 celcius=[11,36,47.5, 0]
 fahreinheit=[((9/5)*temp + 32) for temp in celcius]
-print(fahreinheit)
+print(fahreinheit) 
+
+"""
+
+###
+num=list(range(1,11))
+cubes=[x**3 for x in num]
+print(cubes)
+
+
+num=list(range(1,11))
+print(num)
+for x in num:
+  print(x)
