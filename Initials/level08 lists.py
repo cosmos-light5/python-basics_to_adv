@@ -212,7 +212,7 @@ position = cars.index("Porche", 4)        #startsearching from 4th index but giv
 print(position)
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
-count = cars.count("Porche")              #given element ko count return garxa  
+count = cars.count("Porche")              #given element list ma katiwata xa vanera count return garxa  
 print(count)                               #output: 1
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
@@ -243,3 +243,5 @@ print(num)          #output: [7, 6, 5, 4, 3, 2, 1, 0]
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 cars.sort(key=len)          #list ko elements lai length ko basis ma sort garxa
 print(cars)          #output: ['Farari', 'Porche', 'Nissan', 'Toyota', 'Roles Royace', 'Volkeswagen', 'Mitsubisi', 'Mercedies Bentz']   
+
+
