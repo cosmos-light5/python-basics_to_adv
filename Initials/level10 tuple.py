@@ -51,9 +51,12 @@ x,y,z=(10,20,30)
 print(x)  # Output: 10
 print(y)  # Output: 20
 
-#indexing and slicing same as lists
+#indexing and slicing, concatenation, counting, and other operations same as lists
 colors = ("red", "green", "blue", "yellow")
 print(colors[0])  # Output: "red"   => indexing
 print(colors[1:3])  # Output: ("green", "blue") => slicing
 
-
+tuple1=(1,2,3)
+tuple2=(4,5,6)
+combined = tuple1 + tuple2
+print(combined)  # Output: (1, 2, 3, 4, 5, 6)
