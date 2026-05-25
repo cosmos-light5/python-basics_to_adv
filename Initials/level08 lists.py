@@ -8,36 +8,45 @@
     -list items may be of different data types"""
 #creating a list
 empty_list = []
-print(empty_list)
+print(empty_list)           #output: []
 
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(numbers)
+#output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
 print(fruits)
 
 mixed_data_types = ['Asabeneh', 250, True, {'country': 'Finland', 'city': 'Helsinki'}, [1, 2, 3]]
 print(mixed_data_types)             #nested list print garxa
+#output: ['Asabeneh', 250, True, {'country': 'Finland', 'city': 'Helsinki'}, [1, 2, 3]]
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print(len(cars[3]))     #given index ma vayeko element ko length dinxa
+#output: 6
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
-print(cars[3])            #given index ko element dinxa, if list ma vayeko index vanda badhi index diyema error dinxa
+print(cars[3])           #given index ko element dinxa, if list ma vayeko index vanda badhi index diyema error dinxa
 print(len(cars))             #list ma vayeko total items ko length dinxa
+""" #output: Porche 
+             5 """
 
 #negative indexing
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print((cars[-1]))             #last element bata -1,-2,-3 count hudai first tira ko position ma aauxa
+#output: Volkeswagen
+
 
 #add garxa tara nested list banaudaina!!..
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 more_cars= cars + ["Nissan","Toyota"]
 print(more_cars)
+#output: ['Roles Royace', 'Mercedies Bentz', 'Farari', 'Porche', 'Volkeswagen', 'Nissan', 'Toyota']
 
 #To repeat or copy same list multiple times and give a new list without nesting
 cars=["Mercedies Bentz"]
 print(cars*3)
+#output: ['Mercedies Bentz', 'Mercedies Bentz', 'Mercedies Bentz']
 
 
 #in operator
@@ -49,6 +58,7 @@ print(cars*3)
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen"]
 print("Mitsubisi" in cars)         
+#output: False
 
 
 #unavailable index ko notify garna ko lagi
@@ -58,6 +68,7 @@ if 0 <= index or index < len(cars):
   print(cars[index])
 else:
   print("Index out of range")
+#output: Index out of range
 
 #List slicing
 ''' -syntax: list[start:stop: step
@@ -69,6 +80,9 @@ else:
 municipality=["Kathmandu","Lalitpur","Bhaktapur","Kavre","Dhading"]
 print(municipality[2:])           #2st index bata last samma print garxa
 print(municipality[:3])           #0 index bata 3rd index i.e 2nd element samma print garxa
+""" output: ['Bhaktapur', 'Kavre', 'Dhading']
+             ['Kathmandu', 'Lalitpur', 'Bhaktapur']  """
+
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[2:4])            #0 index bata 2nd index ko bata start till stop-1 samma..
@@ -77,7 +91,7 @@ print(cars[2:4])            #0 index bata 2nd index ko bata start till stop-1 sa
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[:])        #shallow copy garxa
-
+#output: ['Roles Royace', 'Mercedies Bentz', 'Farari', 'Porche', 'Volkeswagen', 'Mitsubisi', 'Nissan', 'Toyota']
 
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
@@ -98,6 +112,8 @@ print(cars[:4])           #0 index bata 4th index ko bata start till stop-1 samm
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 print(cars[:-2])              #last ko two elements hatayera output dinxa..
 print(cars[-3:])        #last 3 element print garxa but not in reverse order
+#output: ['Roles Royace', 'Mercedies Bentz', 'Farari', 'Porche', 'Volkeswagen', 'Mitsubisi']
+#output: ['Nissan', 'Toyota']
 
 #using step in slicing
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
@@ -169,10 +185,12 @@ print(cars)             #output: ['Roles Royace', 'Mercedies Bentz', 'Farari', '
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 del cars[0]            #given index ko element remove garxa
 print(cars)
+#output: ['Mercedies Bentz', 'Farari', 'Porche', 'Volkeswagen', 'Mitsubisi', 'Nissan', 'Toyota']
 
-del cars[3:5]           #given index ko range ma elements remove garxa ie. 3rd and 4th index ko elements remove garxa
-print(cars)  
-
+animation=["Ponyo","spirited away","Tomb of fireflies","Ponyo","spirited away","howling castle"]
+del animation[3:5]           #given index ko range ma elements remove garxa ie. 3rd and 4th index ko elements remove garxa
+print(animation)  
+#output: ['Ponyo', 'spirited away', 'Tomb of fireflies', 'howling castle']
 
 cars=["Roles Royace","Mercedies Bentz","Farari","Porche","Volkeswagen","Mitsubisi", "Nissan","Toyota"]
 cars.clear()           #list ko sabai elements remove garxa
