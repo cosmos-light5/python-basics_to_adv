@@ -18,3 +18,15 @@
 #empty tuple
 empty_tuple = ()
 print(empty_tuple)
+
+#single element tuple (note the comma)
+single_element_tuple = (42,)            #without the comma, it would be just an integer inside parentheses, not a tuple
+print(single_element_tuple)
+
+#multiple element tuple
+multiple_element_tuple = (1, "hello", 3.14)
+print(multiple_element_tuple)
+
+#accessing elements
+print(multiple_element_tuple[1])  # Output: "hello"
+
