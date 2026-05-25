@@ -61,10 +61,19 @@ tuple2=(4,5,6)
 combined = tuple1 + tuple2
 print(combined)  # Output: (1, 2, 3, 4, 5, 6)
 
+#repetition
 repeated = tuple1 * 3
 print(repeated)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)      #repeating the elements of tuple1 three times
+
+
+
+#only methods in tuple are count and index
+colors = ("red", "green", "blue", "yellow")
 print(colors.count("red"))  # Output: 1
 print(colors.index("blue"))  # Output: 2
+
 print(len(colors))  # Output: 4
 
 #membership test
+print("green" in colors)  # Output: True
+print("purple" in colors)  # Output: False  
