@@ -77,3 +77,17 @@ print(len(colors))  # Output: 4
 #membership test
 print("green" in colors)  # Output: True
 print("purple" in colors)  # Output: False  
+
+#using * to collect remaining elements during unpacking
+numbers = (1, 2, 3, 4, 5)  
+first, *rest = numbers
+print(first)  # Output: 1
+print(rest)   # Output: [2, 3, 4, 5]  (rest is a list containing the remaining elements)
+
+#swapping values using tuple unpacking
+a = 10
+b = 20
+a, b = b, a
+print(a)  # Output: 20
+print(b)  # Output: 10
+
