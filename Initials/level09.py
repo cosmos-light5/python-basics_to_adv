@@ -34,3 +34,17 @@ for fruit in fruits:
     print(f"\'{fruit}\' starts with \'b\'")
   #else chahidaina displayed output aanusar
   print(f"\'{fruit}\' has \'{len(fruit)}\' letters.")
+
+
+#comparing forloop and list comprehension
+num=[1,2,3,4,5]
+cubes=[]
+for x in num:
+  cube=x**3
+  cubes.append(cube)
+print(cubes)
+
+
+num=[1,2,3,4,5]
+cube=[x**3 for x in num]      #list comprehension
+print(cube)
