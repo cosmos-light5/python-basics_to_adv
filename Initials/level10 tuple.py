@@ -91,3 +91,45 @@ a, b = b, a
 print(a)  # Output: 20
 print(b)  # Output: 10
 
+
+##to extract first letter of each word of the sentence
+word=["This","plant","is","a","male", "one"]
+
+for f_letter in word:
+  print(f_letter[0])
+""" Output:T
+p
+i
+a
+m
+o """
+
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()      # Split sentence into words
+
+for word in words:
+    print(word[0])
+""" Output:
+Enter a sentence: Hello mate, how are you doing?
+H
+m
+h
+a
+y
+d """
+
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()      # Split sentence into words
+
+for word in words:
+    print([word[0]])
+""" Output:
+Enter a sentence: Hello mate, how are you doing?
+['H']
+['m']
+['h']
+['a']
+['y']
+['d'] """
