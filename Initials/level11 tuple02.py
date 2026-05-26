@@ -31,3 +31,16 @@ for stud in students:
   if stud[2] == "A":
     print(stud)
     print(stud[0])
+
+#2nd but best way
+for name, age, grade in students:
+  if grade=="A":
+    print(students)
+
+
+""" Why to use tuple?
+-Immutability: Tuples cannot be modified after creation, which can help prevent accidental changes to data.
+-Performance: Tuples are generally faster than lists of read-only operations
+-Hashability: Tuples can be used as keys in dictionaries, while lists cannot.
+-Data Integrity: Prorect data that should not be changed, such as coordinates or fixed sets of values.
+-perfect for representing fixed collections of items, such as RGB color values or database records."""
