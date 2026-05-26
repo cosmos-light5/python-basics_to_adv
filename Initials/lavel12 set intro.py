@@ -43,6 +43,27 @@ books={"Pearl harbour","palpasa cafe","uttam gyan"}
 books.add("you can win")               #.add le matra eut element add garxa
 print(books)
 
-books={"Pearl harbour","palpasa cafe","uttam gyan"}
+books={"Pearl harbour","palpasa cafe","uttam gyan","you can win"}
 books.update("Into the wind","you can win")            #.update le 2 or more elements add garxa raindividual characters xarera display garxa ani 'iterable's matra rakhne eg. string
 print(books)                                           #unique elements rakhne vayeko le you can win dekhaudaina
+
+
+#removing elements from set
+""" -remove():removes an element, rises key error if not found 
+    -discard():removes an element if present, no error if not found
+    -pop():removes and returns an arbitary element
+    -clear():removes all elements"""
+
+books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind"}
+books.remove("Into the wind")
+
+books.remove("Art of bravery")              #navako element remove garda throws as key error ........
+books.discard("Art of bravery")             #no error when element does not exist
+
+
+removed=books.pop()
+print('removed:', removed)                  #randomly pop garxa any element
+print(books)                                #gives the remaining elements
+
+books.clear()                               #removes all elements
+print(books)
