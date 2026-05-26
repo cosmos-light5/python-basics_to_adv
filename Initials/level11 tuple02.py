@@ -63,3 +63,18 @@ print(student)
 print(student[0][1])  # Output: ram
 """ Output:
 (('name', 'ram'), ('age', 10), ('grade', 5))"""
+
+#last Question
+students = [
+    ("Alice", 20, "A"),
+    ("Bob", 19, "B"),
+    ("Charlie", 21, "A"),
+    ("David", 20, "C")
+]
+
+studs=[]
+for stud in students:
+  if (stud[2]=="A"):
+    studs.append(stud[0])
+print(studs)   # Output: ['Alice', 'Charlie']
+  
