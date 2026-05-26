@@ -36,5 +36,13 @@ print(unique)
 citrus={"lemon","orange"}
 fruits={"apple","banana","mango","cherry","date"}
 
-print(citrus.issubset(fruits))              #Output:True
-print(fruits.issubset(citrus))              #Output:True
+print(citrus.issubset(fruits))              #Output:False
+print(fruits.issubset(citrus))              #Output:False
+
+books={"Pearl harbour","palpasa cafe","uttam gyan"}
+books.add("you can win")               #.add le matra eut element add garxa
+print(books)
+
+books={"Pearl harbour","palpasa cafe","uttam gyan"}
+books.update("Into the wind","you can win")            #.update le 2 or more elements add garxa raindividual characters xarera display garxa ani 'iterable's matra rakhne eg. string
+print(books)                                           #unique elements rakhne vayeko le you can win dekhaudaina
