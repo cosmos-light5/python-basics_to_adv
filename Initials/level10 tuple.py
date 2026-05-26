@@ -133,3 +133,11 @@ Enter a sentence: Hello mate, how are you doing?
 ['a']
 ['y']
 ['d'] """
+
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()      # Split sentence into words
+
+for word in words:
+  first, *rest=word
+  print(first, end=" ")
