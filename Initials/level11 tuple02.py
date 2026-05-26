@@ -30,7 +30,7 @@ students = [
 for stud in students:
   if stud[2] == "A":
     print(stud)
-    print(stud[0])
+    
 
 #2nd but best way
 for name, age, grade in students:
@@ -44,3 +44,11 @@ for name, age, grade in students:
 -Hashability: Tuples can be used as keys in dictionaries, while lists cannot.
 -Data Integrity: Prorect data that should not be changed, such as coordinates or fixed sets of values.
 -perfect for representing fixed collections of items, such as RGB color values or database records."""
+
+
+name="ram"
+student=(('name',name),('age', 10),('grade', 5))
+print(student)
+
+""" Output:
+(('name', 'ram'), ('age', 10), ('grade', 5))"""
