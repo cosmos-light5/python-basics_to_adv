@@ -139,5 +139,70 @@ sentence = input("Enter a sentence: ")
 words = sentence.split()      # Split sentence into words
 
 for word in words:
-  first, *rest=word
+  first, *rest=word         #*rest ma rest can be replaced with any other variable name..
   print(first, end=" ")
+""" Output:
+Enter a sentence: Jane Godal is a professional biologist and genetic researcher as well.
+J G i a p b a g r a w """
+
+  
+my_list = [["apple", "banana"], ["avocado", "grape"], ["apricot", "mango"]]
+
+for i, sublist in enumerate(my_list):
+    for j, item in enumerate(sublist):
+        print(f"Index [{i}][{j}] = {item}")
+""" Output:
+Index [0][0] = apple
+Index [0][1] = banana
+Index [1][0] = avocado
+Index [1][1] = grape
+Index [2][0] = apricot
+Index [2][1] = mango """
+
+
+char = "a"
+for sublist in my_list:
+    for item in sublist:
+        if item.startswith(char):
+            print(item)
+
+""" Output:
+apple
+avocado
+apricot"""
+
+
+char = "a"
+for i, sublist in enumerate(my_list):
+    for j, item in enumerate(sublist):
+        if item.startswith(char):
+            print(f"{item} found at index [{i}][{j}]")
+
+""" Output:
+apple found at index [0][0]
+avocado found at index [1][0]
+apricot found at index [2][0]"""
+
+#list comphrension
+result = [(i, j, item)
+          for i, sublist in enumerate(my_list)
+          for j, item in enumerate(sublist)
+          if item.startswith("a")]
+print(result)
+""" Output:
+[(0, 0, 'apple'), (1, 0, 'avocado'), (2, 0, 'apricot')] """
+
+
+my_list = [["apple", "banana"], ["avocado", "grape"], ["apricot", "mango"]]
+
+for i, sublist in enumerate(my_list):
+    for j, item in enumerate(sublist):
+        print(f"Index [{i}.{j}] = {item}")
+""" Output:
+Index [0.0] = apple
+Index [0.1] = banana
+Index [1.0] = avocado
+Index [1.1] = grape
+Index [2.0] = apricot
+Index [2.1] = mango """
+
