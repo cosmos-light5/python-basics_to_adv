@@ -26,3 +26,15 @@ hello, welcome to nepal..
 num=[1,2,2,2,33,44,44,5,5,6,7,77,77,77,898,0]
 unique=list(set(num))         #list lai set ma convert gareko unique element gain garna
 print(unique)
+""" Output:
+[0, 1, 2, 33, 898, 5, 6, 7, 44, 77] """
+
+
+#Membership testing vaneko use of in operator ho..
+
+#subset and superset
+citrus={"lemon","orange"}
+fruits={"apple","banana","mango","cherry","date"}
+
+print(citrus.issubset(fruits))              #Output:True
+print(fruits.issubset(citrus))              #Output:True
