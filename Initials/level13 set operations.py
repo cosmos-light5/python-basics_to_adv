@@ -18,9 +18,9 @@ print(uni)
 set1={1,3,5,7,9,11,12}
 set2={2,4,6,8,0,11,12}
 
-upd=set1.update(set2)       #updated elements will be stored either in assumed variable or in set1 i.e. in set just before .update()
+upd=set1.update(set2)       #updated elements will be stored either in assumed variable or in set1 i.e. in set just before .update(), not in parenthesis of update()
 print(upd)                  #incorrect way
-#Output: None --> because upd variable le hold garne value nai paudain kina vane set1.update(set2) aafai ma value hold garne hoina matra operation ho, so khali hunxa upd set
+#Output: None --> because upd variable le hold garne value nai paudain kina vane set1.update(set2) aafai ma value hold gardaia, matra operation ho, so khali hunxa upd set
 
 set1.update(set2)       #updated elements will be stored either in assumed variable or in set1 i.e. in set just before .update()
 print(set1)             #Output:{0,1,2,3,4,5,6,7,8,9,0,11,12}  i.e. original set1 lai nai change garne raixa..
@@ -54,3 +54,22 @@ print(common)
 
 common=set1 & set2
 print(common)
+
+#Intersection_update()
+set1={1,3,5,7,9,11,12}
+set2={2,4,6,8,0,11,12}
+
+set1.intersection_update(set2)
+print(set1)
+
+#equivalent and-equals method
+set1 &= set2
+print(set1)
+
+#multiple intersection
+set1={1,3,5,7,9,11,12}
+set2={2,4,6,8,0,11,12}
+set3={11,8,9,13,24}
+
+multiple_intersection=set1.intersection(set2,set3)
+print(multiple_intersection)
