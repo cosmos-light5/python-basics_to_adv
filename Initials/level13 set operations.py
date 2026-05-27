@@ -73,3 +73,7 @@ set3={11,8,9,13,24}
 
 multiple_intersection=set1.intersection(set2,set3)
 print(multiple_intersection)
+
+#eqv method
+multi_intsec= set1 & set2 & set3
+print(multi_intsec)
