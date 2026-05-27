@@ -42,9 +42,9 @@ print(multi_uni)
 
 #Intersection
 """ -intersection(): returns a new set with elements common to both sets
-    -& operator(): Alternative syntax for intersection
+    -& operator: Alternative syntax for intersection
     -intersection_update(): In-place intersection (modifies the original set)
-    -&= operator(): Alternative syntax for intersection_update"""
+    -&= operator: Alternative syntax for intersection_update"""
 
 set1={1,3,5,7,9,11,12}
 set2={2,4,6,8,0,11,12}
@@ -77,3 +77,20 @@ print(multiple_intersection)
 #eqv method
 multi_intsec= set1 & set2 & set3
 print(multi_intsec)
+
+#set operation: Difference
+""" -difference(): returns a new set with elements in the first set but not in second set
+    - -operator: Alternative syntax for difference
+    - difference_update(): In-place difference(modifies the original set)
+    - -= operator: Alternative syntax for difference_update
+"""
+
+set1={1,3,5,7,9,11,12}
+set2={2,4,6,8,0,11,12}
+
+sub=set1.difference(set2)
+print(sub)              #Output:{1, 3, 5, 7, 9}
+
+diff=set1-set2
+print(diff)
+
