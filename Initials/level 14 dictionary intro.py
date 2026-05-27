@@ -29,4 +29,24 @@ books={"Title":"Radha",
        "Price":450}
 print(books)
 
+#accessing dictonary elements
+""" -using keys: direct access with square bracket
+    -get() method: safe access with default values
+    -Keys, values and items: accessing all elements
+ """
 
+dict_function=dict(Title="Radha",
+       Auther="Krishna Dharabasi",
+       Price=450)
+print(dict_function)
+print(dict_function["Title"])
+#print(dict_function["pages"])       #key_error dinxa, dictionary ma navayeko element access garna khoje ma
+
+
+dict_function=dict(Title="Radha",
+       Auther="Krishna Dharabasi",
+       Price=450)
+print(dict_function)
+print(dict_function["Title"])                   
+#print(dict_function["pages"])                             #unsafe way
+print(dict_function.get("pages", "Not available"))         #safe way; element navaye ma None ki rakhoyeko default message output ma dinxa
