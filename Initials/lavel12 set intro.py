@@ -56,14 +56,15 @@ print(books)                                           #unique elements rakhne v
 
 books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind"}
 books.remove("Into the wind")
-
-books.remove("Art of bravery")              #navako element remove garda throws as key error ........
+print(books)
+books.remove("Art of bravery")   
+print(books)           #navako element remove garda throws as key error ........
 books.discard("Art of bravery")             #no error when element does not exist
-
+print(books)
 
 removed=books.pop()
 print('removed:', removed)                  #randomly pop garxa any element
 print(books)                                #gives the remaining elements
 
 books.clear()                               #removes all elements
-print(books)
+print(books)                                #output:set()
