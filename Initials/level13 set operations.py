@@ -125,10 +125,19 @@ print(set1)             #output: {1, 3, 5, 7}
 set1={1,3,5,7,9,11,12}
 set2={2,4,6,8,0,11,12}
 
-sym_diff=set1.symmetric_difference(set2)
-print(sym_diff)
+sym_diff=set1.symmetric_difference(set2)            #order doesnot matter for symmetric difference i.e. place of set1 & set2 can be exchanged. 
+print(sym_diff)                         #Output:{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+#eqv method
+symdiff=set1^set2
+print(symdiff)
 
 
+#update method
+set1.symmetric_difference_update(set2)         
+print(set1)                             #Output:{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+#eqv method
 set1^=(set2)    #^-->carate symbol; ^ not power operator but ** is.
 print(set1)
 
