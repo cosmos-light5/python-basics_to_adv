@@ -14,14 +14,18 @@ print(empty_dict)
 #keys cannot be list or set but values can
 mixed_dict={"str_key":"value", "int_key":55, "list_key":[1,7,0]}
 print(mixed_dict)
+""" Output: {'str_key': 'value', 'int_key': 55, 'list_key': [1, 7, 0]} """
+
 
 #dict() implementation
 using_dict_function=dict(name="Yak-dai", age=25, city="Shangri-la")
 print(using_dict_function)
+""" Output:{'name': 'Yak-dai', 'age': 25, 'city': 'Shangri-la'} """
+
 
 from_tuples=dict([("name","Yak-dai"), ("age",25), ("city","Shangri-la")])
 print(from_tuples)
-
+""" Output: {'name': 'Yak-dai', 'age': 25, 'city': 'Shangri-la'} """
 
 
 books={"Title":"Radha",
@@ -65,10 +69,18 @@ dict_function=dict(Title="Radha",
 print(dict_function)
 print(dict_function["Title"])
 print(dict_function.get("pages", "Not available"))
+""" Output:
+{'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450}
+Radha
+Not available """
+
 
 dict_function["Editon"]="Third"
 #dict_function["Editon"]="3rd"  --> lekhda pani error aaudaina
 print(dict_function)
+""" Output: {'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, 'Editon': 'Third'} """
 
 dict_function.update(email="hello@friend.com", Price=550)
 print(dict_function)
+""" Output: 
+{'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 550, 'Editon': 'Third', 'email': 'hello@friend.com'} """
