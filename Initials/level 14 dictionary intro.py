@@ -50,3 +50,25 @@ print(dict_function)
 print(dict_function["Title"])                   
 #print(dict_function["pages"])                             #unsafe way
 print(dict_function.get("pages", "Not available"))         #safe way; element navaye ma None ki rakhoyeko default message output ma dinxa
+
+
+
+#Modifying dictionary
+""" -Adding or updating: using assignment with keys
+    -Updating multiple key-value: using updat() method
+    -Removing item: using pop(), popitem(), del, clear() 
+"""
+
+dict_function=dict(Title="Radha",
+       Auther="Krishna Dharabasi",
+       Price=450)
+print(dict_function)
+print(dict_function["Title"])
+print(dict_function.get("pages", "Not available"))
+
+dict_function["Editon"]="Third"
+#dict_function["Editon"]="3rd"  --> lekhda pani error aaudaina
+print(dict_function)
+
+dict_function.update(email="hello@friend.com", Price=550)
+print(dict_function)
