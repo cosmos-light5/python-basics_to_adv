@@ -11,9 +11,22 @@ Key characteristics:
 empty_dict={}
 print(empty_dict)
 
+#keys cannot be list or set but values can
+mixed_dict={"str_key":"value", "int_key":55, "list_key":[1,7,0]}
+print(mixed_dict)
+
+#dict() implementation
+using_dict_function=dict(name="Yak-dai", age=25, city="Shangri-la")
+print(using_dict_function)
+
+from_tuples=dict([("name","Yak-dai"), ("age",25), ("city","Shangri-la")])
+print(from_tuples)
 
 
 
+books={"Title":"Radha",
+       "Auther":"Krishna Dharabasi",
+       "Price":450}
+print(books)
 
 
-#keys cannot be list or set
