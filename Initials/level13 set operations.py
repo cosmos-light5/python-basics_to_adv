@@ -50,21 +50,21 @@ set1={1,3,5,7,9,11,12}
 set2={2,4,6,8,0,11,12}
 
 common=set1.intersection(set2)          #variable ma intersection nai name chahi narakhne because its one of the pre defined key-words ho
-print(common)
+print(common)                       #Output:{11, 12}
 
 common=set1 & set2
-print(common)
+print(common)                       #Output:{11, 12}
 
 #Intersection_update()
 set1={1,3,5,7,9,11,12}
 set2={2,4,6,8,0,11,12}
 
 set1.intersection_update(set2)
-print(set1)
+print(set1)                         #Output:{11, 12}
 
 #equivalent and-equals method
 set1 &= set2
-print(set1)
+print(set1)                         #Output:{11, 12}
 
 #multiple intersection
 set1={1,3,5,7,9,11,12}
@@ -72,11 +72,11 @@ set2={2,4,6,8,0,11,12}
 set3={11,8,9,13,24}
 
 multiple_intersection=set1.intersection(set2,set3)
-print(multiple_intersection)
+print(multiple_intersection)                #Output: {11}
 
 #eqv method
 multi_intsec= set1 & set2 & set3
-print(multi_intsec)
+print(multi_intsec)                         #Output: {11}
 
 #set operation: Difference
 """ -difference(): returns a new set with elements in the first set but not in second set
@@ -92,5 +92,27 @@ sub=set1.difference(set2)
 print(sub)              #Output:{1, 3, 5, 7, 9}
 
 diff=set1-set2
-print(diff)
+print(diff)             #Output: {1, 3, 5, 7, 9}
 
+#set difference_update method
+set1={1,3,5,7,9,11,12}
+set2={2,4,6,8,0,11,12}
+
+set1.difference_update(set2)
+print(set1)             #Output: {1, 3, 5, 7, 9}
+
+#eqv method
+set1 -= set2
+print(set1)             #Output: {1, 3, 5, 7, 9}
+
+
+#multi set difference
+set1={1,3,5,7,9,11,12}
+set2={2,4,6,8,0,11,12}
+set3={11,8,9,13,24}
+
+set1.difference_update(set2,set3)
+print(set1)             #output: {1, 3, 5, 7}
+
+
+#Symmetric difference
