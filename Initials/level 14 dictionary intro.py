@@ -74,8 +74,8 @@ print(dict_function.get("pages", "Not available"))
 Radha
 Not available """
 
-
-dict_function["Editon"]="Third"
+#adding key-value in dictionary
+dict_function["Editon"]="Third"         #yesari nai values update garna milxa 
 #dict_function["Editon"]="3rd"  --> lekhda pani error aaudaina
 print(dict_function)
 """ Output: {'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, 'Editon': 'Third'} """
@@ -84,3 +84,27 @@ dict_function.update(email="hello@friend.com", Price=550)
 print(dict_function)
 """ Output: 
 {'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 550, 'Editon': 'Third', 'email': 'hello@friend.com'} """
+
+
+#removing items
+email=books.pop("email")
+print(email)
+
+#pop with default values if key doesnot exists
+Phone_no=books.pop("contacts", "No contacts available..")
+print(Phone_no)
+
+
+last_item=books.popitem()
+print(last_item)
+print(books)
+
+#Deleting specific KeyboardInterrupt
+books["temp"]="delete me"
+print(books)
+del books["temp"]
+print(books)
+
+#clearing all items
+books.clear()
+print(books)        #output: {}
