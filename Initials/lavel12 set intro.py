@@ -52,19 +52,30 @@ print(books)                                           #unique elements rakhne v
 """ -remove():removes an element, rises key error if not found 
     -discard():removes an element if present, no error if not found
     -pop():removes and returns an arbitary element
+            -In Set, set.pop()--> Removes a random element & takes no argument
+            -In Set, set.pop(0)-->TypeError
+            -In List, list.pop(0)-->Removes the first element & takes argument
     -clear():removes all elements"""
 
 books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind"}
 books.remove("Into the wind")
 print(books)
-books.remove("Art of bravery")   
-print(books)           #navako element remove garda throws as key error ........
-books.discard("Art of bravery")             #no error when element does not exist
-print(books)
 
+books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
+books.remove("Art of bravery")   
+print(books)           #navako element remove garda throws as key error .......books.discard("Art of bravery")             #no error when element does not exist
+
+
+books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
 removed=books.pop()
 print('removed:', removed)                  #randomly pop garxa any element
 print(books)                                #gives the remaining elements
+""" Output:
+uttam gyan
+{'Into the wind', 'you can win', 'Pearl harbour', 'palpasa cafe'} """
 
+
+books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
 books.clear()                               #removes all elements
 print(books)                                #output:set()
+
