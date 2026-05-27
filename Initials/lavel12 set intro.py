@@ -58,24 +58,49 @@ print(books)                                           #unique elements rakhne v
     -clear():removes all elements"""
 
 books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind"}
-books.remove("Into the wind")
+books.remove("Into the wind")           #correct way and the passed arguments must exists in the operating set 
 print(books)
 
+""" books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
+removed=books.remove("you can win")
+
+print(removed)      #incorrect way and results 'None' because .remove() aafai ma euta remove garne functoin ho jasle value hold gardaina on execution so removed print garda None aauxa
+print(books)        
+#output: None
+         {'uttam gyan', 'Into the wind', 'Pearl harbour', 'palpasa cafe'}
+
+         
 books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
 books.remove("Art of bravery")   
-print(books)           #navako element remove garda throws as key error .......books.discard("Art of bravery")             #no error when element does not exist
-
+print(books)         --> #set ma navako element remove garna vane throws as key error .......books.discard("Art of bravery")             #no error when element does not exist
+"""
 
 books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
 removed=books.pop()
 print('removed:', removed)                  #randomly pop garxa any element
 print(books)                                #gives the remaining elements
 """ Output:
-uttam gyan
-{'Into the wind', 'you can win', 'Pearl harbour', 'palpasa cafe'} """
+            uttam gyan
+            {'Into the wind', 'you can win', 'Pearl harbour', 'palpasa cafe'} 
+"""
 
+
+""" removed=books.pop(2)
+print('removed:', removed)                  #randomly pop garxa any element
+print(books)    
+# -->This will cause an error because set has unorder elements, so no proper index for any element 
+ #TypeError: pop() takes no arguments (i.e. index)
+"""
 
 books={"Pearl harbour","palpasa cafe","uttam gyan","Into the wind","you can win"}
-books.clear()                               #removes all elements
-print(books)                                #output:set()
+books.clear()        #removes all elements
+print(books)         #output:set()
 
+books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind","The Ulchemist"}
+books.discard("The Ulchemist")          #set ma navayeko arguments discard garda no error..
+print(books)
+
+
+books={"Pearl harbour","palpasa cafe","uttam gyan","you can win","Into the wind"}
+books.discard("Art of bravery")
+print(books)
