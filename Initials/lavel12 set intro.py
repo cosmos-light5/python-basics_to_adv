@@ -3,7 +3,7 @@
     -unordered (items have no defined order, you cannot access items by index)
     -no redundant items (each item is unique, duplicates are removed automatically)
     -elements must be immutable (cannot be changed after creation, e.g. numbers, strings, tuples but not lists or dictionaries)
-    -sets are mutable (you can add or remove items from a set after it is created)
+    -sets are mutable (you can add or remove items from a set after it is created) but it's elements are immutable..
     -fast membership testing [o(1) average time complexity for checking if an item is in a set]
     -created using curly braces {} or the set() constructor i.e.
                 syntax:set_name = {item1, item2, item3} or set_name = set([item1, item2, item3])
