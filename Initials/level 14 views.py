@@ -16,7 +16,14 @@ print(value_view)
 print(item_view)
 
 
-books["published year"]=2020
+
+books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication"}
+books["published year"]=2020        #Dynamic nature i.e. key ra value add garko
 
 print(key_view)
 print(books)
+
+#conversion dict to list
+books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication"}
+book_details=list(books.keys())
+print(book_details)
