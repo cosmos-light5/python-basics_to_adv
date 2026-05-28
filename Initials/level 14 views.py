@@ -27,3 +27,11 @@ print(books)
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication"}
 book_details=list(books.keys())
 print(book_details)
+
+#views support iteration, membership testing and length
+for key in key_view:
+    print(key)
+
+print("price" in key_view)
+print(len(item_view))
+
