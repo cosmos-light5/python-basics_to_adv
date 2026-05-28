@@ -35,3 +35,24 @@ for key in key_view:
 print("price" in key_view)
 print(len(item_view))
 
+#Looping through dictionaries
+""" -looping through keys: Default behaviour
+    -looping through values: using values() method
+    -looping through key-value pairs: using items() method
+    -Conditional looping: Filtering during iteration 
+"""
+
+
+#looping through keys
+books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication","published year":2020}
+for i in books:
+    print(i)                    # i ko value print huda, keys matra print garxa but not in manner of list
+
+#looping through values
+for j in books.values():
+    print(j)
+
+#looping through key-value pairs
+for key, value in books.items():
+    print(f"{key}: {value}")
+
