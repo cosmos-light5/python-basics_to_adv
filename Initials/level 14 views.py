@@ -46,7 +46,10 @@ print(len(item_view))
 #looping through keys
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication","published year":2020}
 for i in books:
-    print(i)                    # i ko value print huda, keys matra print garxa but not in manner of list
+    print(i)                    # i ko value print huda, keys matra print garxa as default but not in manner of list
+#or equ 
+for i in books:
+    print(f"{i}: {books[i]})             # i default keys hunxa  
 
 #looping through values
 for j in books.values():
@@ -56,3 +59,58 @@ for j in books.values():
 for key, value in books.items():
     print(f"{key}: {value}")
 
+#sample
+capital_cities={
+    "Nepal": "Kathmandu",
+    "India":"New Delhi",
+    "USA":"Washington, D.C.",
+    "Japan":"Tokyo"
+}
+
+for i in capital_cities:
+  print(f"The capital city of {i} is {capital_cities[i]}.")
+
+
+capital_cities={
+    "Nepal": "Kathmandu",
+    "India":"New Delhi",
+    "USA":"Washington, D.C.",
+    "Japan":"Tokyo"
+}
+
+for key, values in capital_cities.items():
+  if key=="Nepal":
+    print(f"The capital city of {key} is {values}.")
+
+
+#practice
+products={
+    "laptop":70000,
+    "mouse":500,
+    "keyboard":1200,
+    "monitor":1500,
+}
+count=0
+for key, value in products.items():
+    if value>1000:
+        count+=1
+print(f"{count} products cost more than 1000.")
+
+
+#basic dictionary comprehension
+cube = {x: x**3 for x in range(1,20)}       multiple of3
+print(cube)
+
+
+cube = {x: x**3 for x in range(10) if 6 != x}
+print(cube)
+
+#swappping keys and values positions
+# Original dictionary
+old_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# Swap keys and values
+new_dict = {value: key for key, value in old_dict.items()}
+
+# Display the output
+print(new_dict)
