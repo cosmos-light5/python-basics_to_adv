@@ -87,15 +87,24 @@ print(dict_function)
 
 
 #removing items
+books={'Title': 'Radha',
+       'Auther': 'Krishna Dharabasi', 
+       'Price': 550, 
+       'Editon': 'Third', 
+       'email': 'hello@friend.com'}
+
 email=books.pop("email")
 print(email)
+print(books)
+""" Output: hello@friend.com
+{'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 550, 'Editon': 'Third'} """
 
 #pop with default values if key doesnot exists
 Phone_no=books.pop("contacts", "No contacts available..")
 print(Phone_no)
 
 
-last_item=books.popitem()
+last_item=books.popitem()                 #last time insert gare ko item remove garxa .popitem() le
 print(last_item)
 print(books)
 
@@ -112,20 +121,46 @@ print(books)        #output: {}
 
 
 #Dictionary method for merging and updating
-""" -update(): updates dictionary withkey-values with from another
+""" -update(): updates dictionary with key-values with from another
     -| operator  (Python 3.9+): 
     -|- operator : 
  """
 
 #update() method
-person={"name":"John", "age": 30}
-details={"city":"New York", "email":john@gmail.com}
+books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450}
+details={"edition":"3rd", "Publication":"Sarada Publication"}
 
-person.update(details)
-print(person)
+books.update(details)
+print(books)
 
 
 #Overwriting existing key
+books.update({"edition": "4th", "pages": 550})                 #edition ko value overwrite gareko
+print(books)
 
-person.update({"age": 31, "job": "developer"})
-print(person)
+
+#dictionary merge operator | (Python 3.9+)
+dict1={"a": 1, "b":2}
+dict2={"b": 3, "c":4}
+
+dict1.update(dict2)
+print(dict1)                
+""" Output:{'a': 1, 'b': 3, 'c': 4}  #merge garda dict2 ko b ko values linxa because b ko value overwrite garera update gareko hunxa"""        
+
+#eqv method
+merged= dict1 | dict2                    
+print(merged)
+
+
+#dictionary update operator |= (Python 3.9+)
+dict1 |= dict2              #updates dict1 in-place                    
+print(dict1)                #Output:{'a': 1, 'b': 3, 'c': 4}
+
+
+
+#for python <3.9, use {**dict1, **dict2} to merge
+dict1={"a": 1, "b":2}
+dict2={"b": 3, "c":4}
+
+early_merge={**dict1, **dict2}
+print(early_merge)  
