@@ -108,3 +108,24 @@ print(books)
 #clearing all items
 books.clear()
 print(books)        #output: {}
+
+
+
+#Dictionary method for merging and updating
+""" -update(): updates dictionary withkey-values with from another
+    -| operator  (Python 3.9+): 
+    -|- operator : 
+ """
+
+#update() method
+person={"name":"John", "age": 30}
+details={"city":"New York", "email":john@gmail.com}
+
+person.update(details)
+print(person)
+
+
+#Overwriting existing key
+
+person.update({"age": 31, "job": "developer"})
+print(person)
