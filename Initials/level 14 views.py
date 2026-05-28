@@ -47,9 +47,24 @@ print(len(item_view))
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication","published year":2020}
 for i in books:
     print(i)                    # i ko value print huda, keys matra print garxa as default but not in manner of list
+""" Output:
+450
+3rd
+Sarada Publication
+2020 """
+
 #or equ 
+
 for i in books:
-    print(f"{i}: {books[i]})             # i default keys hunxa  
+    print(f"{i}: {books[i]}")             # i default keys hunxa  
+""" output:
+Title: Radha
+Auther: Krishna Dharabasi
+Price: 450
+edition: 3rd
+Publication: Sarada Publication
+published year: 2020 """
+
 
 #looping through values
 for j in books.values():
@@ -69,7 +84,11 @@ capital_cities={
 
 for i in capital_cities:
   print(f"The capital city of {i} is {capital_cities[i]}.")
-
+""" output:The capital city of Nepal is Kathmandu.
+The capital city of India is New Delhi.
+The capital city of USA is Washington, D.C..
+The capital city of Japan is Tokyo.
+The capital city of Nepal is Kathmandu. """
 
 capital_cities={
     "Nepal": "Kathmandu",
@@ -81,7 +100,7 @@ capital_cities={
 for key, values in capital_cities.items():
   if key=="Nepal":
     print(f"The capital city of {key} is {values}.")
-
+""" output: The capital city of Nepal is Kathmandu."""
 
 #practice
 products={
@@ -95,22 +114,21 @@ for key, value in products.items():
     if value>1000:
         count+=1
 print(f"{count} products cost more than 1000.")
-
+""" output: 3 products cost more than 1000. """
 
 #basic dictionary comprehension
-cube = {x: x**3 for x in range(1,20)}       multiple of3
+cube = {x: x**3 for x in range(1,20)}       #multiple of3
 print(cube)
 
 
 cube = {x: x**3 for x in range(10) if 6 != x}
 print(cube)
+""" output:{0: 0, 1: 1, 2: 8, 3: 27, 4: 64, 5: 125, 7: 343, 8: 512, 9: 729}"""
+
 
 #swappping keys and values positions
-# Original dictionary
 old_dict = {'a': 1, 'b': 2, 'c': 3}
+new_dict = {value: key for key, value in old_dict.items()}          # Swap keys and values
 
-# Swap keys and values
-new_dict = {value: key for key, value in old_dict.items()}
-
-# Display the output
 print(new_dict)
+""" output:{1: 'a', 2: 'b', 3: 'c'} """
