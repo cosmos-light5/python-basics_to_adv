@@ -17,7 +17,7 @@ def greets(f_name,l_name, greeting):
     print(f"{greeting} {f_name} {l_name}")
     print("Welcome")
 
-greets("Michel","Danny","namaste,")
+greets("Michel","Danny","Ola,")
 greets("Prakash","Thapa","Jhorle,")
 greets("Taka","Noboru", "konichiwa,")
 
