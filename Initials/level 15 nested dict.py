@@ -1,4 +1,4 @@
-books={"Harry Potter":{"ISBN": 12,
+""" books={"Harry Potter":{"ISBN": 12,
                     "author": "J. K. Rollins",
                     "publish_date": 1990}, 
 
@@ -30,7 +30,7 @@ print("before update: ", books)
 books.update({"ISBN": 56,
                     "author": "Paollo Kohello",
                     "publish_date": 1997})
-print("after update: ", books)
+print("after update: ", books) """
 
 #use '.capitalize() to make the subjct name first letter capital'
 students={
@@ -49,6 +49,6 @@ students={
 for i,j in students.items():
     print(i, end=" - ")
     for sub, marks in j.items():
-        print(f"{sub.capitalize()}: {marks}", end=" ")
+        print(f"{sub.capitalize()}: {marks}", end=", ")
     print()    
     
