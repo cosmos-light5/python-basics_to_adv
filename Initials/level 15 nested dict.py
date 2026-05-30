@@ -72,9 +72,11 @@ print(books)
 
 #jaha key vetidaina tya ha error nadiyi comment print garna .get() ko use gare ko..
 print(books.get("Serve-well", "doesnot exists").get("price", "Invalid input.."))
-print(books.get("Serve-well", {}).get("price", "Invalid input.."))
+print(books.get("Serve-well", {}).get("price", "Invalid input.."))              #{} --> vaneko None vaneko ho
 
-
+# Adding a key to a nested dictionary
+books["Summer love"]["price"] = 550         #yaha summer love vitra euta "price" key add garera tesko value diyeko ho...
+print(books)
 
 
 #use '.capitalize() to make the subjct name first letter capital'
