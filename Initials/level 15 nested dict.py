@@ -27,10 +27,17 @@ books["The Ulchemist"]={"ISBN": 56,
 print(books)
 
 print("before update: ", books)
-books.update({"ISBN": 56,
-                    "author": "Paollo Kohello",
-                    "publish_date": 1997})
+books.update({"The Ulchemist":{"ISBN": 56,                  #small changes inside the ulchemist dict...
+                    "author": "Paollo Kohelo",
+                    "publish_date": 1997}})
 print("after update: ", books) 
+
+
+print(books.get("Serve-well", "doesnot exists").get("price", "Invalid input.."))
+print(books.get("Serve-well", {}).get("price", "Invalid input.."))
+
+
+
 
 #use '.capitalize() to make the subjct name first letter capital'
 students={
