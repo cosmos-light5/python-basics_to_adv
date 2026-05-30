@@ -78,6 +78,23 @@ print(books.get("Serve-well", {}).get("price", "Invalid input.."))              
 books["Summer love"]["price"] = 550         #yaha summer love vitra euta "price" key add garera tesko value diyeko ho...
 print(books)
 
+#major keys dinxa .title() le
+for book_name, details in books.items():
+    print(f"{book_name.title()}")
+""" Output: Harry Potter
+            Romeo-Juliet    
+            Serve-Well
+            The Art Of War
+            The Law Of Human Nature
+            Summer Love
+            The Ulchemist """
+
+
+#books vitra ko book details matra dinako lagi..
+book_details=list(books.values())           #yaha values nested vayeko le nested values nai print hunxa..
+print(book_details)
+
+
 
 #use '.capitalize() to make the subjct name first letter capital'
 students={
@@ -99,3 +116,9 @@ for i,j in students.items():
         print(f"{sub.capitalize()}: {marks}", end=", ")
     print()    
     
+""" Output:
+            Ram - Math: 85, Science: 90, English: 78, 
+            Sita - Math: 92, Science: 88, English: 81, 
+    """
+
+
