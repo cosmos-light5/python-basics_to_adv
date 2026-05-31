@@ -1,3 +1,10 @@
+#function 
+""" -block of reusable code designed to perform a specific task
+    -enhance code modularity, readability and maintainability by allowing you to breakdown complex problems into smaller and manageable units
+    -defined using keyword 'def' followed by name, parenthesis and a colon
+    -function's body is indented below the definition line
+    -e.g. print(), random(), type(), range(),..."""
+
 def greet():
     print("hello world \nWelcome!")
 
