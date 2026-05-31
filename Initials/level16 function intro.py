@@ -99,11 +99,30 @@ def fizz_Buzz(num):
 
 fizz_Buzz(15)  
 
+#Or
+def fizz_Buzz(num):
+  if num%3 == 0 and num%5 == 0:         #if-else use gare 1st condition check garera next condition ma janxa nai tara only if condition use gare ma 1st ko check garxa ra correct vaye tehi stop garxa navaye matera next if conditon ma shift hunxa
+    return "num"
+  if num%5 ==0:
+    return "Buzz"
+  if num%3 == 0:
+    return "Fizz"
+  
+  return num
+
+print(fizz_Buzz(15))  
 
 
-def increment(number, by=1):
+#Default keyword and Defaulr arguments
+""" -Default keyword have predefined values if no arguments are provided
+    -keyword arguments are specified by parameter's name"""
+
+def increment(number, by=1):            #here by=1 is default value, ...(..,..,10) here 10 is default value
     return number + by
 increment(10)
+
+#over writing default arguments
+print(greet("hello", "bob"))
 
 
 #functoin (*number)     -->* paxadi ko lai args vaninxa
