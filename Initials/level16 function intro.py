@@ -36,11 +36,27 @@ greets("Taka","Noboru", "konichiwa,")
 """ -input variable that you define for a function
     -argument is an actual value for the parameters """
 
+
+
+
+""" 
+#Types of function
+    - perform a task     #eg. print() inside functon is a perform a task type and returns nothing just performs the coded task 
+                                i.e. something equals print() garera lekhnu pardainxa print() aafai le kam garxa
+    - return a value     #function where functons e.g. .round() takes argument in it and pass to the variable that is made 
+                                equal to .round() i.e round() le something value return garne raixa ra aarko variable ma pass garxa wa sidhai print garna use hunxa
+      """
+
 def get_greeting(name):
-    return f"hi {"name"}"
+    return f"hi {"name"}"           #here return is a return type function as it passes the comments from get_greetings to the invoked units 
 
 message = get_greeting("john")
-print(message)
+print(message)                      #print() is a perform a task type function as it just prints on code execution and returns no thing to the functions or other units.. 
+
+""" all functions by default returns null """
+
+#Returning Multiple values
+
 
 
 def increment(number, by=1):
