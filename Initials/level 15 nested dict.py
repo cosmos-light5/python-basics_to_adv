@@ -121,4 +121,9 @@ for i,j in students.items():
             Sita - Math: 92, Science: 88, English: 81, 
     """
 
+a=[85,90,78,32]
+highest=0
 
+a.sort()              #increasing order ma sort garxa
+#print(a.sort())      #yo gare none aauxa
+print(a[-1])          #Output: 90

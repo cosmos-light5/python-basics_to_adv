@@ -27,3 +27,21 @@ def get_greeting(name):
 
 message = get_greeting("john")
 print(message)
+
+
+def increment(number, by=1):
+    return number + by
+increment(10)
+
+
+#functoin (*number)     -->* paxadi ko lai args vaninxa
+
+def product(*num):
+    print(num)
+    prod=1
+    for i in num:
+        print(i)
+        prod*=i
+    return prod
+    
+product(10,20, 30, 40,50, 6,7,8,3)
