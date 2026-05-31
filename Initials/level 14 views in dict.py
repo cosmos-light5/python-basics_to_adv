@@ -14,26 +14,45 @@ item_view=books.items()
 print(key_view)
 print(value_view)
 print(item_view)
-
+""" Output:
+dict_keys(['Title', 'Auther', 'Price', 'edition', 'Publication'])
+dict_values(['Radha', 'Krishna Dharabasi', 450, '3rd', 'Sarada Publication'])
+dict_items([('Title', 'Radha'), ('Auther', 'Krishna Dharabasi'), ('Price', 450), ('edition', '3rd'), ('Publication', 'Sarada Publication')])
+ """
 
 
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication"}
 books["published year"]=2020        #Dynamic nature i.e. key ra value add garko
 
-print(key_view)
+print(key_view)         #Output: dict_keys(['Title', 'Auther', 'Price', 'edition', 'Publication'])
 print(books)
+""" Output:
+{'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, 'edition': '3rd', 'Publication': 'Sarada Publication', 'published year': 2020}
+ """
+
 
 #conversion dict to list
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication"}
 book_details=list(books.keys())
 print(book_details)
+""" Output:
+['Title', 'Auther', 'Price', 'edition', 'Publication']      -->book.keys() vayeko thau ma dictionary keys() vitra dekhauthyo..
+ """
+
 
 #views support iteration, membership testing and length
 for key in key_view:
     print(key)
+""" Output: 
+Title
+Auther
+Price
+edition
+Publication
+ """
 
-print("price" in key_view)
-print(len(item_view))
+print("price" in key_view)          #False
+print(len(item_view))               #5
 
 #Looping through dictionaries
 """ -looping through keys: Default behaviour
@@ -46,12 +65,14 @@ print(len(item_view))
 #looping through keys
 books={'Title': 'Radha', 'Auther': 'Krishna Dharabasi', 'Price': 450, "edition":"3rd", "Publication":"Sarada Publication","published year":2020}
 for i in books:
-    print(i)                    # i ko value print huda, keys matra print garxa as default but not in manner of list
+    print(i)       # i ko value print huda, keys matra print garxa as default but not in manner of list
 """ Output:
-450
-3rd
-Sarada Publication
-2020 """
+Title
+Auther
+Price
+edition
+Publication
+published year """
 
 #or equ 
 
@@ -69,7 +90,14 @@ published year: 2020 """
 #looping through values
 for j in books.values():
     print(j)
-
+""" Output:
+Radha
+Krishna Dharabasi
+450
+3rd
+Sarada Publication
+2020
+ """
 #looping through key-value pairs
 for key, value in books.items():
     print(f"{key}: {value}")
