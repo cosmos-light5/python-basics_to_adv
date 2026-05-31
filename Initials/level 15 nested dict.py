@@ -121,9 +121,105 @@ for i,j in students.items():
             Sita - Math: 92, Science: 88, English: 81, 
     """
 
+txt=students.keys()
+print(txt)                  #Output:  dict_keys(['Ram', 'Sita'])
+
+subjects = students["Ram"].keys()              #ram vitra ko keys
+print(subjects)
+""" Output: dict_keys(['math', 'science', 'english']) """
+
 a=[85,90,78,32]
 highest=0
 
 a.sort()              #increasing order ma sort garxa
 #print(a.sort())      #yo gare none aauxa
 print(a[-1])          #Output: 90
+
+
+
+#to print the given output
+students = {
+    "Ram": {"math": 85, "science": 90, "english": 78},
+    "Sita": {"math": 92, "science": 88, "english": 81}
+}
+
+subjects = list(students.values())[0]   # {'math': 85, 'science': 90, 'english': 78} i.e. subject with corresponding marks
+
+for subject in subjects:
+  score = 0
+  student = ""
+  for name, marks in students.items():
+    if marks[subject] >= score:             #marks[subject] --> vaneko marks vitra ko subjects hoina makrs subjects ko vaneko ho...
+      score = marks[subject]
+      student = name.capitalize()
+
+
+  print(f"{subject.capitalize()} : {student} ({score})")
+
+  """ Output:
+Math : Sita (92)
+Science : Ram (90)
+English : Sita (81)
+     """
+  
+#OR
+students = {
+    "Ram": {"math": 85, "science": 90, "english": 78},
+    "Sita": {"math": 92, "science": 88, "english": 81}
+}
+
+subjects = students["Ram"].keys()       # dict_keys(['math', 'science', 'english']) thus, subjects=['math', 'science', 'english']
+
+for subject in subjects:                #This loop runs once for each subject i.e. 1st loops runs for maths then science and so on
+    highest_mark = -1                   #We use -1 because marks are always greater than -1.
+    topper = ""
+
+    for student, marks in students.items():
+        if marks[subject] > highest_mark:
+            highest_mark = marks[subject]
+            topper = student
+
+    print(f"{subject.capitalize()}: {topper} ({highest_mark})")
+
+#Or
+
+students = {
+    "Ram": {"math": 85, "science": 90, "english": 78},
+    "Sita": {"math": 92, "science": 88, "english": 81}
+}
+
+# Get the list of subjects
+subjects = students["Ram"].keys()
+
+# Find highest scorer in each subject
+for subject in subjects:
+    topper = max(students, key=lambda student: students[student][subject])    #on iteration over a dictionary, Python uses its keys "students" i.e. equivalent to ["Ram", "Sita"]-->max(["Ram", "Sita"], key=...)
+    highest_mark = students[topper][subject]
+
+    print(f"{subject.capitalize()}: {topper} ({highest_mark})")
+
+""" 
+Understanding the Lambda Function:
+lambda student: students[student][subject]      -->is a short function.
+Equivalent to:
+def get_mark(student):
+    return students[student][subject]
+
+The lambda tells Python:
+"For each student, return the mark of the current subject."
+First Iteration: Math
+lambda student: students[student]["math"]
+
+max()
+max(
+    ["Ram", "Sita"],
+    key=lambda student: students[student]["math"]
+)
+
+
+Internally:
+Ram  -> 85
+Sita -> 92
+Maximum value is 92, so max() returns: "Sita" i.e. returns the student name, not the mark.
+
+ """
