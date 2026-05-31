@@ -10,12 +10,16 @@ def greet():
 
 greet()
 
+#Arguments and parameters
+""" -Parameters are the variables listed in the function definition
+    -Arguments are the values that are passed the function when it's called
+     """
 
-def greets(f_name,l_name):
+def greets(f_name,l_name):              #here f_name and l_name are parameters i.e. variables
     print(f"hello {f_name} {l_name}")
     print("Welcome")
 
-greets("Michel","Danny")
+greets("Michel","Danny")                #here Michel and Danny are arguments passed to the function
 greets("Prakash","Thapa")
 greets("Taka","Noboru")
 
@@ -28,6 +32,9 @@ greets("Michel","Danny","Ola,")
 greets("Prakash","Thapa","Jhorle,")
 greets("Taka","Noboru", "konichiwa,")
 
+#Parameters
+""" -input variable that you define for a function
+    -argument is an actual value for the parameters """
 
 def get_greeting(name):
     return f"hi {"name"}"
