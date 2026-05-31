@@ -53,9 +53,25 @@ def get_greeting(name):
 message = get_greeting("john")
 print(message)                      #print() is a perform a task type function as it just prints on code execution and returns no thing to the functions or other units.. 
 
-""" all functions by default returns null """
+""" # all functions by default returns null """
+
+
+
 
 #Returning Multiple values
+def calculate(x,y):
+    sum=x+y
+    diff=x-y
+    product=x*y
+    quotient=x/y
+    return sum, diff, product, quotient                 #return ma vayeko sum, diff, product, quotient  function vitra ko sanga match hunxa tara function bahira ko chai any supposition hunasakxa
+
+sum, diff, product, quotient=calculate(10,5)            #tarayaha ko sum, diff, product, quotient  chai farak ho print ko lagi reference banayeko matra ho
+print(f"add: {sum}, sub:{diff}")                        #sum, diff, product, quotient  ko satta s,d,p,q = calculate(10,5) pani garna milxa function bahira ko lai
+
+result=calculate(10,5)
+print(result)               #multiple print garna ko lagi ra yesle tuple ko form ma dinxa
+
 
 
 
