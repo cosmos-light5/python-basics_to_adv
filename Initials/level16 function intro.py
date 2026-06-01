@@ -114,13 +114,13 @@ print(fizz_Buzz(15))
 
 """
 
-#Default keyword and Defaulr arguments
+#Default keyword and Default arguments
 """ -Default keyword have predefined values if no arguments are provided
     -keyword arguments are specified by parameter's name"""
 
 
 def greet_person(name, greetings="Hello", punctuation="!"):
-   return f"{greeting}, {name}{punctuation}"
+   return f"{greetings}, {name}{punctuation}"
 
 print(greet_person("bob"))              #using default arguments
 print(greet_person("bob", "hi"))        #over-writing default arguments
@@ -136,7 +136,10 @@ print(increment(10,5))
 print(increment(10,by=5))
 
 
-
+""" *args (arbitary Positional Arguments)
+    -allows function to allow an arbitary number of non-keyword (positional) arguments
+    -when it is used in function definition, all the positional arguments passed to the function are collected into a tuple
+    -The name args is a convention: any valid variable name preceeded by a single '*' can be used"""
 #functoin (*number)     -->* paxadi ko lai args vaninxa
 
 def product(*num):
@@ -148,3 +151,25 @@ def product(*num):
     return prod
     
 product(10,20, 30, 40,50, 6,7,8,3)
+
+
+#kwargs
+def save_user(**user):
+    print(user)           #user is a dictionary
+save_user(id=1, name="John",age=22)             #yaha "name"= gare error dinxa
+save_user(id=1, name="Jon",age=22, email="hello@gmail.com")
+
+
+
+def introduce_person(name, age):
+  def get_name_part():
+    return "My name is"
+  def get_age_part():
+    return f"and I am {age} years old."
+  
+  # result=get_name_part()}{name} + {get_age_part()
+  return f"{get_name_part()}{name} + {get_age_part()}"
+
+# print(introduce_person("Bob", 30))
+introduce_person("Bob", 30)
+# return get_name_part() +name + get_age_part()
