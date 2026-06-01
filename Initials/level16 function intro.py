@@ -70,7 +70,7 @@ result=calculate(10,5)
 print(result)               #multiple print garna ko lagi ra yesle tuple ko form ma dinxa
 
 
-
+""" 
 #diaplay as given output
 num=int(input("Enter a number: "))
 
@@ -112,23 +112,35 @@ def fizz_Buzz(num):
 
 print(fizz_Buzz(15))  
 
+"""
 
 #Default keyword and Defaulr arguments
 """ -Default keyword have predefined values if no arguments are provided
     -keyword arguments are specified by parameter's name"""
 
+
+def greet_person(name, greetings="Hello", punctuation="!"):
+   return f"{greeting}, {name}{punctuation}"
+
+print(greet_person("bob"))              #using default arguments
+print(greet_person("bob", "hi"))        #over-writing default arguments
+print(greet_person("hello", "bob"))     #using keyword arguments
+
+
 def increment(number, by=1):            #here by=1 is default value, ...(..,..,10) here 10 is default value
     return number + by
-increment(10)
+print(increment(10))                    #using Default arguments
 
-#over writing default arguments
-print(greet("hello", "bob"))
+#uisng keyword arguments
+print(increment(10,5))
+print(increment(10,by=5))
+
 
 
 #functoin (*number)     -->* paxadi ko lai args vaninxa
 
 def product(*num):
-    print(num)
+    print(num)            #here num is in tuple so can be looped over
     prod=1
     for i in num:
         print(i)
