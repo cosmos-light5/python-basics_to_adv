@@ -1,4 +1,5 @@
-#function 
+# ctrl + / --> # i.e. tyo line sabai one line comment hunxa python ma
+# function 
 """ -block of reusable code designed to perform a specific task
     -enhance code modularity, readability and maintainability by allowing you to breakdown complex problems into smaller and manageable units
     -defined using keyword 'def' followed by name, parenthesis and a colon
@@ -129,7 +130,7 @@ print(greet_person("hello", "bob"))     #using keyword arguments
 
 def increment(number, by=1):            #here by=1 is default value, ...(..,..,10) here 10 is default value
     return number + by
-print(increment(10))                    #using Default arguments
+print(increment(10))                    #using Default argument i.e by=1
 
 #uisng keyword arguments
 print(increment(10,5))
@@ -157,7 +158,25 @@ product(10,20, 30, 40,50, 6,7,8,3)
 def save_user(**user):
     print(user)           #user is a dictionary
 save_user(id=1, name="John",age=22)             #yaha "name"= gare error dinxa
-save_user(id=1, name="Jon",age=22, email="hello@gmail.com")
+save_user(id=1, name="Jon",age=22, email="hello@gmail.com")     #yesari kwargs ma keyword arguments jati pani dinu mailxa
+
+# e.g. if email is mandatory and to check the existance of email
+def save_user(**user):
+    print(user)  
+    if user.get("email"):                   #if user["email"]: gare ma error dinxa email keyword navete ma.. so .get() use gareko
+        print("Email is mandatory!")        #tara yo message email keyword vetiye matra print hunxa navetiye ma no message..    
+
+save_user(id=1, name="Jon",age=22, email="hello@gmail.com")       #yesma print huxna message
+# save_user(id=1, name="John",age=22)           -->check garxa tara yesma print hudaina message user.get() garda so solution tala xa..
+
+
+#Also
+def save_user(**user):
+    print(user)
+    if "email" not in user:                   ##yaha yo message email keyword navetiye matra print hunxa ma no message..    
+        print("Email is mandatory!")
+
+save_user(id=1, name="John", age=22)
 
 
 
