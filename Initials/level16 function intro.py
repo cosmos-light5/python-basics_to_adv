@@ -154,7 +154,14 @@ def product(*num):
 product(10,20, 30, 40,50, 6,7,8,3)
 
 
-#kwargs
+#kwargs (Arbitary Keywords Arguments)
+""" -**kwargs syntax allows a function to accept an arbitary number of keyword arguments
+    -Whent **kwargs is used in a function definition, all the keyword arguments passed to the function are collected into a dictionary where the keys are the argument names and the values are their corresponding values
+    -The name kwargs is a convention: any valid name preceeded by a double asterisk  (**) can be used
+    -Kwargs key-value pairs pass garinxa (city="kathmandu") vane args ma values to the variables matra (eg. 'ram')"""
+# max 3 vand badhi arguments napathaune code ramro dekhidaina
+
+
 def save_user(**user):
     print(user)           #user is a dictionary
 save_user(id=1, name="John",age=22)             #yaha "name"= gare error dinxa
@@ -180,6 +187,18 @@ save_user(id=1, name="John", age=22)
 
 
 
+#using function to display given output
+def book_details(**book):
+  print(book)
+  print(book.keys())
+
+  print(f"{book["name"]} was written by {book["author"]}.")
+
+book_details(name="Harry Potter", author="JK Rowling.")
+
+
+
+#inner and outer function
 def introduce_person(name, age):
   def get_name_part():
     return "My name is"
