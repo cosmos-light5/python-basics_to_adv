@@ -185,7 +185,7 @@ def save_user(**user):
 
 save_user(id=1, name="John", age=22)
 
-
+""" Email is mandatory! """
 
 #using function to display given output
 def book_details(**book):
@@ -195,10 +195,18 @@ def book_details(**book):
   print(f"{book["name"]} was written by {book["author"]}.")
 
 book_details(name="Harry Potter", author="JK Rowling.")
+""" Output: {'name': 'Harry Potter', 'author': 'JK Rowling.'} """
 
 
+#nested function (inner and outer function)
+""" -functions defined inside other function
+    -way to encaptulate functionality within the scope of the outer(parent) function
+    #key characteristics:
+      -Scope:Inner functions are accessible only within the scope of the outer function
+      -Access: Inner functions can access variables from the outer function
+      -Encaptulation: They help organizing code by hiding helper function from the global scope
+      """
 
-#inner and outer function
 def introduce_person(name, age):
   def get_name_part():
     return "My name is"
@@ -207,7 +215,8 @@ def introduce_person(name, age):
   
   # result=get_name_part()}{name} + {get_age_part()
   return f"{get_name_part()}{name} + {get_age_part()}"
+  # return get_name_part() +name + get_age_part()
 
 # print(introduce_person("Bob", 30))
 introduce_person("Bob", 30)
-# return get_name_part() +name + get_age_part()
+# print(get_name_part())    --> error dinxa not defined in this scope vanxa i.e. acts encaptulation
