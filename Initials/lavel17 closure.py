@@ -104,11 +104,16 @@ test()
 print(x)   #yaha x ko value global hunxa, because global variable le shadow garxa local variable lai, local variable ko scope matra function bhitra hune vayeko le local variable le global variable lai shadow garna mildaina 
 
 
-#lambda function: 
-""" -a lambda function is a small anonymous function defined using the lambda keyword
+#lambda function(lambda expression/anonymous function) 
+""" -a small, one line function defined using the lambda keyword
+    -concise way to create simple functions without using the def keyword
+    -the expression in a lambda function is evaluated and returned automatically when the function is called
     -can take any number of arguments but can only have one expression
-    - are often used for short, simple operations that can be defined in a single line of code.
-     -syntax: lambda arguments: expression"""
+    -are often used for short, simple operations that can be defined in a single line of code.
+    #syntax: lambda arguments: expression
+    #example: add=lambda x,y: x+y
+    #lambda function lai variable ma assign garna mildaina, because lambda function is an anonymous function, which means it does not have a name. However, you can assign a lambda function to a variable, which allows you to call the function using that variable name. 
+    """
 
 
 say_hello=lambda:"Hello world"
