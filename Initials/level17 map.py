@@ -25,25 +25,26 @@ print(squared_numbers)
 [1, 4, 9, 16, 25]"""
 
 #multiple arguments/iterables with map
-def square(x,y,z):          #jatti wata arguments vayo tetti wata list banaune parcha
+def add(x,y,z):          #jatti wata arguments vayo tetti wata list banaune parcha
     return x+y+z
-numbers1=[1,2,3,4,5]
-numbers2=[1,2,3,4,5]
-numbers3=[1,2,3,4,5]
-squared_numbers=list(map(square, numbers1, numbers2, numbers3))
-print(squared_numbers)
+numbers1=[1,2,3,4,5]        #-->numbers1 ko 1,2,3,4,5 lai x ma rakxa
+numbers2=[1,2,3,4,5]        #-->numbers2 ko 1,2,3,4,5 lai y ma rakxa
+numbers3=[1,2,3,4,5]        #-->numbers3 ko 1,2,3,4,5 lai z ma rakxa ani add function ma x+y+z garxa ani result return garxa
+sum=list(map(add, numbers1, numbers2, numbers3))
+print(sum)
 """ Output:
 [3, 6, 9, 12, 15]"""
 
-def square(x,y,z):
-    return x+y+z
+
+def product(x,y,z):
+    return x*y*z
 numbers1=[1,2,3]
 numbers2=[4,5,6]
 numbers3=[7,8,9]
-squared_numbers=list(map(square, numbers1, numbers2, numbers3))
-print(squared_numbers)
+product_list=list(map(product, numbers1, numbers2, numbers3))
+print(product_list)
 """ Output:
-[12, 15, 18]"""
+[28, 80, 162]"""
 
 
 
