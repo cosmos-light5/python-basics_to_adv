@@ -26,7 +26,7 @@ print(squared_numbers)
 
 #multiple arguments/iterables with map
 def add(x,y,z):          #jatti wata arguments vayo tetti wata list banaune parcha
-    return x+y+z
+    return x+y+z            #square garna ko lagi return x**2+y**2+z**2 garna parcha
 numbers1=[1,2,3,4,5]        #-->numbers1 ko 1,2,3,4,5 lai x ma rakxa
 numbers2=[1,2,3,4,5]        #-->numbers2 ko 1,2,3,4,5 lai y ma rakxa
 numbers3=[1,2,3,4,5]        #-->numbers3 ko 1,2,3,4,5 lai z ma rakxa ani add function ma x+y+z garxa ani result return garxa
@@ -46,6 +46,14 @@ print(product_list)
 """ Output:
 [28, 80, 162]"""
 
+#map with different iterables length
+list1=[1,12,3,4,5,15,9,27]
+list2=[10,20,30]
+result=list(map(lambda x,y:x+y, list1, list2))
+print(result)       #[11, 32, 33]   #map function le choto iterable ko length lai consider garxa ani tesko length samma matra map function le kaam garxa
+""" Output:
+[11, 32, 33] -->list2 ko 2nd index samma vayeko le operation garda mathi ko pani 2nd index samma operation gareko ho..
+    """
 
 
 #filter functions
