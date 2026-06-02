@@ -110,13 +110,13 @@ print(x)   #yaha x ko value global hunxa, because global variable le shadow garx
     -the expression in a lambda function is evaluated and returned automatically when the function is called
     -can take any number of arguments but can only have one expression
     -are often used for short, simple operations that can be defined in a single line of code.
-    #syntax: lambda arguments: expression
+    #syntax: lambda arguments: expression -->euta matra expression support garxa not multi expression
     #example: add=lambda x,y: x+y
     #lambda function lai variable ma assign garna mildaina, because lambda function is an anonymous function, which means it does not have a name. However, you can assign a lambda function to a variable, which allows you to call the function using that variable name. 
     """
 
 
-say_hello=lambda:"Hello world"
+say_hello=lambda:"Hello world"          #say_hello is a variable that holds the lambda function, which takes no arguments and returns the string "Hello world". later say_hello() function banxa
 print(say_hello())                      #print garda variable name paxi () rakhne because tyo lambda function baneko hunxa..
 
 
@@ -124,18 +124,3 @@ max=lambda x,y: x if x>y else y
 #max=lambda a,b:max(a,b)   # built in function lai lambda function ma rakhna mildaina, because lambda function ma expression matra hunxa, tyo built in function call garna mildaina..
 print(max(10,20))           #best for DSA, because we can use lambda function as a key in sorting, filtering, etc..
 
-
-
-
-
-
-numbers=[1,2,3,4,5,6,7,8,9,10]
-greater_than_five=list(filter(lambda x:x>5, numbers))
-print(greater_than_five)
-
-words=['hi','hello','bye','good_bye','yes','no']
-more_than_three=list(filter(lambda word:len(word)>3, words))
-print(more_than_three)
-
-word_with_h=list(filter(lambda word:"h" in word, words))
-print(word_with_h)
