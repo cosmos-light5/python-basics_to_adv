@@ -72,18 +72,36 @@ print(multiply(4,2, extra_no=11))
 """ -scope is the region of a program where a variable is defined and can be accessed. 
     -It determines the visibility and lifetime of variables in a program. 
   There are four types of scope in Python:
-    -local scope: variables defined inside a function are in the local scope and can only be accessed within that function.
-    -enclosing scope: variables defined in the enclosing function (the outer function) can be accessed by the inner function (the nested function) but not by the outer function itself.
-    -global scope: variables defined at the top level of a module or script are in the global scope and can be accessed from anywhere in the program.
+    -local scope: -variables defined inside a function are in the local scope and can only be accessed within that function.
+                  -local variables are created when the function is called and destroyed when the function exits.
+    -enclosing scope: -variables defined in the enclosing function (the outer function) can be accessed by the inner function (the nested function) but not by the outer function itself.
+                      -outer function ma vayeko varible inner function ma  lyayera modify garna inner function ma variable ko aagadi 'nonlocal' keyword use garne
+    -global scope: -variables defined at the top level of a module or script are in the global scope and can be accessed from anywhere in the program.
+                   -global variables are created when the program starts and destroyed when the program ends.
+                   -global variable lai function bhitra modify garna 'global' keyword use garne
+                   #global variable jahile top mai lekhne..
     -built-in scope: variables and functions that are built into Python are in the built-in scope and can be accessed from anywhere in the program without needing to import any modules.
-  LEGB rule: 
+  
+  EGB rule: 
       when you try to access a variable, Python follows the LEGB rule to determine where to look for the variable:
         -Local: Python first looks for the variable in the local scope (inside the current function).
         -Enclosing: If the variable is not found in the local scope, Python looks for it in the enclosing scope (the outer function).
         -Global: If the variable is not found in the enclosing scope, Python looks for it in the global scope (the top level of the module).
         -Built-in: If the variable is not found in the global scope, Python looks for it in the built-in scope (the standard library). If the variable is not found in any of these scopes, a NameError is raised.
         """
-#global variable jahile top mai lekhne..
+
+
+
+# Shadow variable:
+""" -when a variable in a local scope has the same name as a variable in an enclosing scope, the local variable is said to "shadow" the variable in the enclosing scope. 
+    -This means that when you access the variable in the local scope, you will get the value of the local variable, not the value of the variable in the enclosing scope.
+ """
+x="global"
+def test():
+  x="local"
+  print(x)   #yaha x ko value local hunxa, because local variable le aafno function vitra shadow garxa global variable lai
+test()
+print(x)   #yaha x ko value global hunxa, because global variable le shadow garxa local variable lai, local variable ko scope matra function bhitra hune vayeko le local variable le global variable lai shadow garna mildaina 
 
 
 #lambda function: 
