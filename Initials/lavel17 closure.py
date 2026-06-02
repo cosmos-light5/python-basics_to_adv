@@ -31,7 +31,15 @@ print(cube(3))
 """ -are powerful and flexible features in python that allows you to modify and enhance functions and methods without changing theit code
     -they follow the principle of open/closed i.e codes should be open for extension but closed for modification. This means that you can add new functionality to existing functions without changing their source code, which promotes code reusability and separation of concerns.
     -It is a higher-order function that takes another function as an argument, adds some functionality and returns a new function withou modifying the original function code. 
-    -Decorators are often used to add functionality, such as logging, timing, or access control, to existing functions in a clean and reusable way. """
+    -Decorators are often used to add functionality, such as logging, timing, or access control, to existing functions in a clean and reusable way. 
+    syntax:
+    @decorator_name
+    def decorator(func):
+      pass
+      
+      Alternatively,
+      function_to_be_decorated=decorator_name(function_to_be_decorated)
+      """
 
 
 def my_decorator(func):                 #yaha 'func' can be replaced with any name, matra parameter ho that represents the function being decorated.
@@ -59,6 +67,22 @@ print(greet("Alo"))
 print(multiply(4,2, extra_no=11))
 
 
+#scope in python
+
+""" -scope is the region of a program where a variable is defined and can be accessed. 
+    -It determines the visibility and lifetime of variables in a program. 
+  There are four types of scope in Python:
+    -local scope: variables defined inside a function are in the local scope and can only be accessed within that function.
+    -enclosing scope: variables defined in the enclosing function (the outer function) can be accessed by the inner function (the nested function) but not by the outer function itself.
+    -global scope: variables defined at the top level of a module or script are in the global scope and can be accessed from anywhere in the program.
+    -built-in scope: variables and functions that are built into Python are in the built-in scope and can be accessed from anywhere in the program without needing to import any modules.
+  LEGB rule: 
+      when you try to access a variable, Python follows the LEGB rule to determine where to look for the variable:
+        -Local: Python first looks for the variable in the local scope (inside the current function).
+        -Enclosing: If the variable is not found in the local scope, Python looks for it in the enclosing scope (the outer function).
+        -Global: If the variable is not found in the enclosing scope, Python looks for it in the global scope (the top level of the module).
+        -Built-in: If the variable is not found in the global scope, Python looks for it in the built-in scope (the standard library). If the variable is not found in any of these scopes, a NameError is raised.
+        """
 #global variable jahile top mai lekhne..
 
 
