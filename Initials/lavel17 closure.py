@@ -24,13 +24,20 @@ cube=power_raiser(3)              # vaneko paila inner function lai memory ma st
 print(square(2))
 print(cube(3))
 
-#decorator: a decorator is a design pattern in Python that allows you to modify the behavior of a function or class method without changing its source code. It is a higher-order function that takes another function as an argument and extends its behavior without explicitly modifying it. Decorators are often used to add functionality, such as logging, timing, or access control, to existing functions in a clean and reusable way.
 
 
-def my_decorator(func):
+
+#decorator
+""" -are powerful and flexible features in python that allows you to modify and enhance functions and methods without changing theit code
+    -they follow the principle of open/closed i.e codes should be open for extension but closed for modification. This means that you can add new functionality to existing functions without changing their source code, which promotes code reusability and separation of concerns.
+    -It is a higher-order function that takes another function as an argument, adds some functionality and returns a new function withou modifying the original function code. 
+    -Decorators are often used to add functionality, such as logging, timing, or access control, to existing functions in a clean and reusable way. """
+
+
+def my_decorator(func):                 #yaha 'func' can be replaced with any name, matra parameter ho that represents the function being decorated.
   def wrapper(*args, **kwargs):
     print(f"Arguments: {args}, keyword arguments: {kwargs}")
-    result = func(*args, **kwargs)  # Call the original function
+    result = func(*args, **kwargs)  
     print("function execution completed")
     return result
   return wrapper
@@ -50,3 +57,38 @@ def multiply(a,b, extra_no):
 print(add(3,5, extra_no=10))
 print(greet("Alo"))
 print(multiply(4,2, extra_no=11))
+
+
+#global variable jahile top mai lekhne..
+
+
+#lambda function: 
+""" -a lambda function is a small anonymous function defined using the lambda keyword
+    -can take any number of arguments but can only have one expression
+    - are often used for short, simple operations that can be defined in a single line of code.
+     -syntax: lambda arguments: expression"""
+
+
+say_hello=lambda:"Hello world"
+print(say_hello())                      #print garda variable name paxi () rakhne because tyo lambda function baneko hunxa..
+
+
+max=lambda x,y: x if x>y else y
+#max=lambda a,b:max(a,b)   # built in function lai lambda function ma rakhna mildaina, because lambda function ma expression matra hunxa, tyo built in function call garna mildaina..
+print(max(10,20))           #best for DSA, because we can use lambda function as a key in sorting, filtering, etc..
+
+
+
+
+
+
+numbers=[1,2,3,4,5,6,7,8,9,10]
+greater_than_five=list(filter(lambda x:x>5, numbers))
+print(greater_than_five)
+
+words=['hi','hello','bye','good_bye','yes','no']
+more_than_three=list(filter(lambda word:len(word)>3, words))
+print(more_than_three)
+
+word_with_h=list(filter(lambda word:"h" in word, words))
+print(word_with_h)
