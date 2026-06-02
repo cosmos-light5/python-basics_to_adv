@@ -56,10 +56,15 @@ print(result)       #[11, 32, 33]   #map function le choto iterable ko length la
     """
 
 
-#filter functions
-
-
-
+#filter functions 
+""" -filter() function takes a function and an iterable as arguments; 
+    #syntax: filter(function, iterable)
+    -returns a new iterable with only the elements of the original iterable for which the function returns True.
+    -used to filter elements from a list based on a specific condition defined by a function.
+    -often used to create a new list that contains only the elements of the original list that meet a certain criteria.
+    -used with a lambda function to create a new list based on the original list.
+    -used with built-in functions like str(), int(), etc. to filter data types in a list which can be useful for data processing and manipulation tasks.
+    """
 
 numbers=[1,2,3,4,5,6,7,8,9,10]
 greater_than_five=list(filter(lambda x:x>5, numbers))
@@ -71,3 +76,21 @@ print(more_than_three)                  #['hello', 'good_bye']
 
 word_with_h=list(filter(lambda word:"h" in word, words))
 print(word_with_h)                      #['hi', 'hello']
+
+
+
+#use of map to convert given list of strings to uppercase
+def capital(x):
+    return x.upper()      
+x=["apple", "banana", "cherry"]
+capitalized=list(map(capital, x))
+print(capitalized)
+""" Output:
+['APPLE', 'BANANA', 'CHERRY']"""
+
+
+
+
+word='hello'
+print(word.startswith('h'))     #True
+print(word.upper())             #HELLO
