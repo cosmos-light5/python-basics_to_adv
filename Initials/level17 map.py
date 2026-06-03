@@ -88,6 +88,13 @@ print(capitalized)
 """ Output:
 ['APPLE', 'BANANA', 'CHERRY']"""
 
+"""or using lambda function
+
+x=["apple", "banana", "cherry"]
+caps=list(map(lambda x:x.upper(), x))
+print(caps)
+ Output:
+['APPLE', 'BANANA', 'CHERRY']"""
 
 
 
