@@ -10,5 +10,6 @@ def write_file():
         f.write("New content")
 
 write_file()
-     """
+
+  """
 
