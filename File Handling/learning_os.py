@@ -45,11 +45,56 @@ else:
     print("not available..")
 
 
-#adding file in cwd
 path=os.path.join(os.getcwd(), 'app.log')           #app.log file banaudai xam vane yesko absolute file path join garera nikalna milxa
 print(path)                                         #D:\DScience\python-basics_to_adv\File Handling\app.log
 
-print("basename", os.path.basename(path))           #basename app.log
-print("directory", os.path.dirname(path))           #directory D:\DScience\python-basics_to_adv\File Handling
-print("split", os.path.splitext(path))              #split ('D:\\DScience\\python-basics_to_adv\\File Handling\\app', '.log')
+print("basename: ", os.path.basename(path))           #basename: app.log     i.e. Returns only the file name (last part of the path)
+print("directory: ", os.path.dirname(path))           #directory: D:\DScience\python-basics_to_adv\File Handling     i.e. Returns the directory (folder) containing the file.
+print("split: ", os.path.splitext(path))              #split: ('D:\\DScience\\python-basics_to_adv\\File Handling\\app', '.log')  i.e. Splits the file name into:-File name without extension; -File extension
+
+#Visual Representation
+""" 
+    C:/Users/Admin/Documents/report.txt
+                             |------|
+                             basename
+
+C:/Users/Admin/Documents | directory
+
+        report     .txt
+        |----|   |---|
+        filename extension 
+
+
+Another example
+path = "data/users/profile.txt"
+
+print(os.path.basename(path))
+print(os.path.dirname(path))
+print(os.path.splitext(path))
+
+o/p:    profile.txt
+        data/users
+        ('data/users/profile', '.txt')
+
+    
+#Accessing filename and extension separately
+filename, extension = os.path.splitext(path)
+
+print(filename)
+print(extension)
+
+o/p:    data/users/profile
+        .txt
+
+#only file name without the directory:
+filename = os.path.basename(path)
+name, ext = os.path.splitext(filename)
+
+print(name)  
+print(ext)   
+
+o/p:    profile
+        .txt
+
+    """
 
