@@ -2,7 +2,7 @@ import csv
 
 #writing a csv file
 data=[
-    ["Name", "age", "City"],
+    ["Name", "age", "City"],                #name, age, city--> header ho vane aaru values
     ["Alice", 25, "New York"],
     ["Bob", 30, "Chicago"],
     ["Charlie", 35, "Los Angles"]
@@ -10,12 +10,12 @@ data=[
 
 with open("people.csv", "w", newline="") as file:
     csv_writer=csv.writer(file)
-    csv_writer.writerows(data) 
+    csv_writer.writerows(data)                      #individual row print garxa
 
 
 with open("people.csv", "r", newline="") as file:
     csv_reader=csv.reader(file)
-    header=next(csv_reader)
+    header=next(csv_reader)                         #Reads the header row; next le one line print garxa
     print(f"Header: {header}")
 
     for row in csv_reader:
