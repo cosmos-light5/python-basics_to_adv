@@ -1,3 +1,15 @@
+""" #class
+#object
+#self
+#initiator/constructor
+#inheritance:
+        -single inheritance
+        -multiple inheritance
+        -multi-level inheritance
+
+ """
+
+
 # Single Inheritance Example (Vehicle → Car)
 # Parent class
 class Vehicle:
