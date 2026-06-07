@@ -18,3 +18,21 @@ class Cat():
 animals=[Dog(), Cat()]
 for animal in animals:
     print(animal.sound()) 
+
+
+#Polymorphism with inheritance(Method Overriding)
+class Employee:
+    def work(self):
+        print("Employees work 8 hours.")
+
+class Developer(Employee):
+    def work(self):
+        print("Developer writes code.")
+
+class Manager(Employee):
+    def work(self):
+        print("Manager manages team.")
+
+workers=[Developer(), Manager()]
+for worker in workers:
+    worker.work()
