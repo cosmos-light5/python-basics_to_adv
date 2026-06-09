@@ -15,7 +15,7 @@ class Cat():
     def sound(self):
         return "meow!"
 
-animals=[Dog(), Cat()]
+animals=[Dog(), Cat()]          #object banayeko
 for animal in animals:
     print(animal.sound()) 
 

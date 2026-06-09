@@ -1,0 +1,12 @@
+2026-06-08 07:48:29,589 - DEBUG - Dividing 10 by 2
+2026-06-08 07:48:29,589 - INFO - Division result: 5.0
+2026-06-08 07:48:35,415 - DEBUG - Dividing 10 by 2
+2026-06-08 07:48:35,415 - INFO - Division result: 5.0
+2026-06-08 07:48:51,400 - DEBUG - Dividing 10 by 0
+2026-06-08 07:48:51,400 - ERROR - Division by zero attempted
+DEBUG:root:Dividing 10 by 0
+ERROR:root:Division by zero attempted
+DEBUG:root:Dividing 10 by 0
+ERROR:root:Division by zero attempted
+DEBUG:root:Dividing 10 by 5
+INFO:root:Division result: 2.0
